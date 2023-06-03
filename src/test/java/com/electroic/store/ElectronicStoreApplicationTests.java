@@ -1,4 +1,4 @@
-package com.lcwd.electroic.store;
+package com.electroic.store;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

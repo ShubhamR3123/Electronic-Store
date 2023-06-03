@@ -1,4 +1,4 @@
-package com.lcwd.electroic.store.entites;
+package com.electroic.store.entites;
 
 import lombok.*;
 
@@ -17,15 +17,16 @@ public class User {
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private String userId;
-    @Column(name = "user_name")
+    @Column(name = "user_name",nullable = false)
     private String name;
     @Column(name = "user_email", unique = true)
     private String email;
-    @Column(name = "user_password", length = 10)
+    @Column(name = "user_password", length = 10,nullable = false)
     private String password;
-    @Column(name = "user_gender")
+
+   @Column(nullable = false)
     private String gender;
-    @Column(length = 10)
+    //@Column(length = 100)
     private String about;
     @Column(name = "user_image_name")
     private String imageName;

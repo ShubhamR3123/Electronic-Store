@@ -1,6 +1,6 @@
-package com.lcwd.electroic.store.services;
+package com.electroic.store.services;
 
-import com.lcwd.electroic.store.dtos.UserDto;
+import com.electroic.store.dtos.UserDto;
 
 import java.util.List;
 
@@ -26,6 +26,6 @@ public interface UserService {
     UserDto getUserByEmail(String userId);
 
     //serach image by keyword
-    UserDto searchUser(String keyword);
+   List<UserDto> searchUser(String keyword);
 
 }
