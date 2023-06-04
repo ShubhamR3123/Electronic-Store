@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Slf4j
@@ -28,7 +29,7 @@ public class UserController {
      * @return
      */
     @PostMapping("/")
-    public ResponseEntity<UserDto> createUser(@RequestBody UserDto userDto) {
+    public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto userDto) {
         log.info("Initiated request for create User details");
         UserDto userDto1 = this.userService.craeteUser(userDto);
         log.info("Completed request for create User details");
@@ -43,7 +44,7 @@ public class UserController {
      * @return
      */
     @PutMapping("/{userId}")
-    public ResponseEntity<UserDto> updateUser(@RequestBody UserDto userDto, @PathVariable("userId") String userId) {
+    public ResponseEntity<UserDto> updateUser(@Valid @RequestBody UserDto userDto, @PathVariable("userId") String userId) {
         log.info("Initiated request for update User details with userId:{}", userId);
         UserDto updateUser = this.userService.updateUser(userDto, userId);
         log.info("Completed request for update User details with userId:{}", userId);
