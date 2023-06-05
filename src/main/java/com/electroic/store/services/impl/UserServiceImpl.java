@@ -24,11 +24,10 @@ public class UserServiceImpl implements UserService {
     private ModelMapper modelMapper;
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This method is used to create User
      * @param userDto
      * @return
-
+     * @author Shubham Dhokchaule
+     * @apiNote This method is used to create User
      */
     @Override
     public UserDto craeteUser(UserDto userDto) {
@@ -46,89 +45,89 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote THis Method is used for Update User
      * @param userDto
      * @param userId
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote THis Method is used for Update User
      */
 
     @Override
     public UserDto updateUser(UserDto userDto, String userId) {
-        log.info("Initiated Dao call for update User with UserId:{}",userId);
+        log.info("Initiated Dao call for update User with UserId:{}", userId);
         User updateduser = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
         UserDto updaedDto = entityToDto(updateduser);
-        log.info("Completed Dao call for update User with UserId:{}",userId);
+        log.info("Completed Dao call for update User with UserId:{}", userId);
         return updaedDto;
     }
 
     /**
+     * @return
      * @author Shubham Dhokchaule
      * @apiNote THis Method is used for get All Users
-     * @return
      */
     @Override
     public List<UserDto> getAllUsers() {
         log.info("Initiated Dao call for get All  Users ");
-        List<User> users =this.userRepository.findAll();
+        List<User> users = this.userRepository.findAll();
         List<UserDto> dtoList = users.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
         log.info("Completed Dao call for get All  Users ");
         return dtoList;
     }
 
     /**
+     * @param userId
      * @author Shubham Dhokchaule
      * @apiNote This method is used for Delete User With userId
-     * @param userId
      */
     @Override
     public void deleteUser(String userId) {
-        log.info("Initiated Dao call for Delete User With userId:{}",userId);
+        log.info("Initiated Dao call for Delete User With userId:{}", userId);
         User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
         userRepository.delete(user);
-        log.info("Completed Dao call for Delete User With userId:{}",userId);
+        log.info("Completed Dao call for Delete User With userId:{}", userId);
 
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote  This Is Method is Used for get User By userId
      * @param userId
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Is Method is Used for get User By userId
      */
     @Override
     public UserDto getUserById(String userId) {
-        log.info("Initiated Dao call for get  User With userId:{}",userId);
+        log.info("Initiated Dao call for get  User With userId:{}", userId);
         User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
-        log.info("Completed Dao call for get  User With userId:{}",userId);
+        log.info("Completed Dao call for get  User With userId:{}", userId);
         return entityToDto(user);
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Is Method is Used for get User By email
      * @param email
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Is Method is Used for get User By email
      */
     @Override
     public UserDto getUserByEmail(String email) {
-        log.info("Initiated Dao call for get  User With email:{}",email);
-        User user =this.userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + email));
-        log.info("Completed Dao call for get  User With email:{}",email);
+        log.info("Initiated Dao call for get  User With email:{}", email);
+        User user = this.userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + email));
+        log.info("Completed Dao call for get  User With email:{}", email);
         return entityToDto(user);
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Is Method is Used for get User By keyword
      * @param keyword
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Is Method is Used for get User By keyword
      */
     public List<UserDto> searchUser(String keyword) {
-        log.info("Initiated Dao call for get  User With keyword:{}",keyword);
+        log.info("Initiated Dao call for get  User With keyword:{}", keyword);
         List<User> users = this.userRepository.findByNameContaining(keyword);
         List<UserDto> dtoList = users.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
-        log.info("Completed Dao call for get  User With keyword:{}",keyword);
+        log.info("Completed Dao call for get  User With keyword:{}", keyword);
         return dtoList;
     }
 

@@ -23,10 +23,10 @@ public class UserController {
     private UserService userService;
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Api is used for create User
      * @param userDto
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Api is used for create User
      */
     @PostMapping("/")
     public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto userDto) {
@@ -37,11 +37,11 @@ public class UserController {
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Api is used to update User
      * @param userDto
      * @param userId
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Api is used to update User
      */
     @PutMapping("/{userId}")
     public ResponseEntity<UserDto> updateUser(@Valid @RequestBody UserDto userDto, @PathVariable("userId") String userId) {
@@ -52,9 +52,9 @@ public class UserController {
     }
 
     /**
+     * @return
      * @author Shubham Dhokchaule
      * @apiNote This Api is used to Get All Users
-     * @return
      */
     @GetMapping("/")
     public ResponseEntity<List<UserDto>> getAllUsers() {
@@ -65,10 +65,10 @@ public class UserController {
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Api is used to Delete User with userId
      * @param userId
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Api is used to Delete User with userId
      */
     @DeleteMapping("/{userId}")
     public ResponseEntity<ApiResponseMessage> deleteUser(@PathVariable("userId") String userId) {
@@ -80,10 +80,10 @@ public class UserController {
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Api is used to Get Single User With Id
      * @param userId
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Api is used to Get Single User With Id
      */
     @GetMapping("/{userId}")
     public ResponseEntity<UserDto> getUserById(@PathVariable String userId) {
@@ -94,10 +94,10 @@ public class UserController {
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Api is used to Get User By Email
      * @param email
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Api is used to Get User By Email
      */
     @GetMapping("/email/{email}")
     public ResponseEntity<UserDto> getUserByEmail(@PathVariable String email) {
@@ -108,15 +108,15 @@ public class UserController {
     }
 
     /**
-     * @author Shubham Dhokchaule
-     * @apiNote This Api is used to Search User With Keyword
      * @param keyword
      * @return
+     * @author Shubham Dhokchaule
+     * @apiNote This Api is used to Search User With Keyword
      */
     @GetMapping("/search/{keyword}")
     public ResponseEntity<List<UserDto>> searchUser(@PathVariable("keyword") String keyword) {
         log.info("Initiated request for search user details with keyword:{}", keyword);
-        List<UserDto> user =this.userService.searchUser(keyword);
+        List<UserDto> user = this.userService.searchUser(keyword);
         log.info("Completed request for search user details with keyword:{}", keyword);
         return new ResponseEntity<List<UserDto>>(user, HttpStatus.OK);
     }

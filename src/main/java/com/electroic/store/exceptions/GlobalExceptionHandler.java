@@ -15,31 +15,31 @@ import java.util.Map;
 public class GlobalExceptionHandler {
 
 
-        @ExceptionHandler(ResourceNotFoundException.class)
-        public ResponseEntity<ApiResponseMessage> resorceNotFoundExceptionHandler(ResourceNotFoundException ex){
-            String message = ex.getMessage();
+    @ExceptionHandler(ResourceNotFoundException.class)
+    public ResponseEntity<ApiResponseMessage> resorceNotFoundExceptionHandler(ResourceNotFoundException ex) {
+        String message = ex.getMessage();
 
-            ApiResponseMessage apiResponse=new ApiResponseMessage(HttpStatus.NOT_FOUND,false,message);
+        ApiResponseMessage apiResponse = new ApiResponseMessage(HttpStatus.NOT_FOUND, false, message);
 
-            return new ResponseEntity<ApiResponseMessage>(apiResponse, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<ApiResponseMessage>(apiResponse, HttpStatus.NOT_FOUND);
 
-        }
-
-        @ExceptionHandler(MethodArgumentNotValidException.class)
-        public ResponseEntity<Map<String, String>>handleMethodArgsNotValidException(MethodArgumentNotValidException ex){
-
-
-            Map<String,String> map=new HashMap<>();
-            ex.getBindingResult().getAllErrors().forEach((error)->{
-                String field = ((FieldError) error).getField();
-                String message = error.getDefaultMessage();
-
-              map.put(field,message);
-
-            });
-
-            return new ResponseEntity<Map<String,String>>(map,HttpStatus.BAD_REQUEST);
-
-        }
     }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<Map<String, String>> handleMethodArgsNotValidException(MethodArgumentNotValidException ex) {
+
+
+        Map<String, String> map = new HashMap<>();
+        ex.getBindingResult().getAllErrors().forEach((error) -> {
+            String field = ((FieldError) error).getField();
+            String message = error.getDefaultMessage();
+
+            map.put(field, message);
+
+        });
+
+        return new ResponseEntity<Map<String, String>>(map, HttpStatus.BAD_REQUEST);
+
+    }
+}
 

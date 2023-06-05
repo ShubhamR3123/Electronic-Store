@@ -8,12 +8,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,String> {
+public interface UserRepository extends JpaRepository<User, String> {
 
 
     Optional<User> findByEmail(String email);
 
-    Optional<User> findByEmailAndPassword(String email,String password);
+    Optional<User> findByEmailAndPassword(String email, String password);
 
-    List<User>findByNameContaining(String name);
-    }
+    List<User> findByNameContaining(String name);
+}

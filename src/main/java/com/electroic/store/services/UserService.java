@@ -17,7 +17,7 @@ public interface UserService {
     List<UserDto> getAllUsers();
 
     // delete User
-     void deleteUser(String userId);
+    void deleteUser(String userId);
 
     //Get Single user By id
     UserDto getUserById(String userId);
@@ -26,6 +26,6 @@ public interface UserService {
     UserDto getUserByEmail(String userId);
 
     //serach image by keyword
-   List<UserDto> searchUser(String keyword);
+    List<UserDto> searchUser(String keyword);
 
 }

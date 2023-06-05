@@ -28,7 +28,7 @@ public class CustomFields {
     @CreatedBy
     private String createdBy;
 
-    @Column(name = "create_date",updatable = false)
+    @Column(name = "create_date", updatable = false)
     @CreationTimestamp
     private LocalDateTime createdOn;
 
@@ -36,7 +36,7 @@ public class CustomFields {
     @LastModifiedBy
     private String LastModifiedBy;
 
-    @Column(name = "update_time",updatable = false)
+    @Column(name = "update_time", updatable = false)
     @UpdateTimestamp
     private LocalDateTime modifiedOn;
 
