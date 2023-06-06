@@ -1,9 +1,9 @@
-package com.electroic.store.controllers;
+package com.electronic.store.controllers;
 
-import com.electroic.store.dtos.ApiResponseMessage;
-import com.electroic.store.dtos.UserDto;
-import com.electroic.store.helper.AppConstants;
-import com.electroic.store.services.UserService;
+import com.electronic.store.dtos.ApiResponseMessage;
+import com.electronic.store.dtos.UserDto;
+import com.electronic.store.helper.AppConstants;
+import com.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

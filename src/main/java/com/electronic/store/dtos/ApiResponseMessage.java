@@ -1,4 +1,4 @@
-package com.electroic.store.dtos;
+package com.electronic.store.dtos;
 
 import lombok.*;
 import org.aspectj.bridge.Message;

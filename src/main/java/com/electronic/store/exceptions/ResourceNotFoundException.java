@@ -1,4 +1,4 @@
-package com.electroic.store.exceptions;
+package com.electronic.store.exceptions;
 
 import lombok.Getter;
 import lombok.Setter;

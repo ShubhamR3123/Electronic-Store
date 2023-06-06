@@ -1,4 +1,4 @@
-package com.electroic.store.entites;
+package com.electronic.store.entites;
 
 import lombok.Getter;
 import lombok.Setter;

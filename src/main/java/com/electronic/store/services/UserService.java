@@ -1,6 +1,6 @@
-package com.electroic.store.services;
+package com.electronic.store.services;
 
-import com.electroic.store.dtos.UserDto;
+import com.electronic.store.dtos.UserDto;
 
 import java.util.List;
 

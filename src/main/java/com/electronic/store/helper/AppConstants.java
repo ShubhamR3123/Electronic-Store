@@ -1,4 +1,4 @@
-package com.electroic.store.helper;
+package com.electronic.store.helper;
 
 public class AppConstants {
 

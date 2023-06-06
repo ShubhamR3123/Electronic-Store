@@ -1,4 +1,4 @@
-package com.electroic.store.config;
+package com.electronic.store.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

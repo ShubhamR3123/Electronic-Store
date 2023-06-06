@@ -1,6 +1,6 @@
-package com.electroic.store.repositories;
+package com.electronic.store.repositories;
 
-import com.electroic.store.entites.User;
+import com.electronic.store.entites.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

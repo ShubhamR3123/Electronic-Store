@@ -1,4 +1,4 @@
-package com.electroic.store;
+package com.electronic.store;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

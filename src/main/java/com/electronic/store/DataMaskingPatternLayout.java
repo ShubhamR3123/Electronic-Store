@@ -1,4 +1,4 @@
-package com.electroic.store;
+package com.electronic.store;
 
 import ch.qos.logback.classic.PatternLayout;
 import ch.qos.logback.classic.spi.ILoggingEvent;

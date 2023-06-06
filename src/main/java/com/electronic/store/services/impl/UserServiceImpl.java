@@ -1,11 +1,11 @@
-package com.electroic.store.services.impl;
+package com.electronic.store.services.impl;
 
-import com.electroic.store.dtos.UserDto;
-import com.electroic.store.entites.User;
-import com.electroic.store.exceptions.ResourceNotFoundException;
-import com.electroic.store.helper.AppConstants;
-import com.electroic.store.repositories.UserRepository;
-import com.electroic.store.services.UserService;
+import com.electronic.store.dtos.UserDto;
+import com.electronic.store.entites.User;
+import com.electronic.store.exceptions.ResourceNotFoundException;
+import com.electronic.store.helper.AppConstants;
+import com.electronic.store.repositories.UserRepository;
+import com.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.electroic.store.dtos;
+package com.electronic.store.dtos;
 
 import com.sun.istack.NotNull;
 import lombok.*;
