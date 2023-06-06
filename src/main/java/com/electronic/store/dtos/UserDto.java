@@ -1,5 +1,6 @@
 package com.electronic.store.dtos;
 
+import com.electronic.store.entites.CustomFieldsDto;
 import com.sun.istack.NotNull;
 import lombok.*;
 
@@ -15,7 +16,7 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UserDto {
+public class UserDto extends CustomFieldsDto {
 
     private String userId;
     @NotNull
@@ -38,15 +39,7 @@ public class UserDto {
 
 
 
-    @NotEmpty
-    private String createdBy;
 
-
-    @Size(min = 3, max = 10, message = "Min 3 chars and Max 10 Chars..!!")
-    //  @NotEmpty
-    private String LastModifiedBy;
-
-    private String isActive;
 
 
 }
