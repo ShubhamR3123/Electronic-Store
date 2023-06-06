@@ -37,4 +37,16 @@ public class UserDto {
     private String imageName;
 
 
+
+    @NotEmpty
+    private String createdBy;
+
+
+    @Size(min = 3, max = 10, message = "Min 3 chars and Max 10 Chars..!!")
+    //  @NotEmpty
+    private String LastModifiedBy;
+
+    private String isActive;
+
+
 }
