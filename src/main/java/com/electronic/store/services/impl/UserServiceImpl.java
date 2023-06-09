@@ -9,6 +9,9 @@ import com.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -67,12 +70,17 @@ public class UserServiceImpl implements UserService {
      * @apiNote THis Method is used for get All Users
      */
     @Override
-    public List<UserDto> getAllUsers() {
+    public List<UserDto> getAllUsers(Integer pageNumber,Integer pageSize,String sortBy,String sortDir) {
+
+        Sort sort =(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).descending());
+        PageRequest page = PageRequest.of(pageNumber, pageSize,sort);
         log.info("Initiated Dao call for get All  Users ");
-        List<User> users = this.userRepository.findAll();
-        List<UserDto> dtoList = users.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
+        Page<User> allusers = this.userRepository.findAll(page);
+        List<User> content = allusers.getContent();
+
+        List<UserDto> collect = allusers.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
         log.info("Completed Dao call for get All  Users ");
-        return dtoList;
+        return collect;
     }
 
     /**

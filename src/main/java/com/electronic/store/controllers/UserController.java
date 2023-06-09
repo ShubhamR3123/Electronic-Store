@@ -57,9 +57,14 @@ public class UserController {
      * @apiNote This Api is used to Get All Users
      */
     @GetMapping("/")
-    public ResponseEntity<List<UserDto>> getAllUsers() {
+    public ResponseEntity<List<UserDto>> getAllUsers(
+            @RequestParam(value = "pageNumber",defaultValue = "1",required = false)Integer pageNumber,
+            @RequestParam(value = "pageSize",defaultValue = "5",required = false)Integer pageSize,
+            @RequestParam(value = "sortBy",defaultValue = "name",required = false)String sortBy,
+            @RequestParam(value = "sortDir",defaultValue = "asc",required = false)String sortDir){
+
         log.info("Initiated request for get All User details ");
-        List<UserDto> allUsers = this.userService.getAllUsers();
+        List<UserDto> allUsers = this.userService.getAllUsers(pageNumber, pageSize,sortBy,sortDir);
         log.info("Completed request for get All User details ");
         return new ResponseEntity<List<UserDto>>(allUsers, HttpStatus.OK);
     }
