@@ -74,7 +74,7 @@
     </root>
 
     <!-- LOG at TRACE level -->
-    <logger name="com.V" level="trace" additivity="false">
+    <logger name="com.electronic.store" level="trace" additivity="false">
         <appender-ref ref="ASYNC_FILE"/>
         <appender-ref ref="ASYNC_CONSOLE"/>
     </logger>

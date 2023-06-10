@@ -1,5 +1,6 @@
 package com.electronic.store.services.impl;
 
+import com.electronic.store.dtos.PageableResponse;
 import com.electronic.store.dtos.UserDto;
 import com.electronic.store.entites.User;
 import com.electronic.store.exceptions.ResourceNotFoundException;
@@ -11,6 +12,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -70,17 +72,25 @@ public class UserServiceImpl implements UserService {
      * @apiNote THis Method is used for get All Users
      */
     @Override
-    public List<UserDto> getAllUsers(Integer pageNumber,Integer pageSize,String sortBy,String sortDir) {
+    public PageableResponse<UserDto> getAllUsers(Integer pageNumber, Integer pageSize, String sortBy, String sortDir) {
 
         Sort sort =(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).descending());
-        PageRequest page = PageRequest.of(pageNumber, pageSize,sort);
+        Pageable pageable = PageRequest.of(pageNumber, pageSize,sort);
         log.info("Initiated Dao call for get All  Users ");
-        Page<User> allusers = this.userRepository.findAll(page);
-        List<User> content = allusers.getContent();
+        Page<User> page = this.userRepository.findAll(pageable);
+        List<User> users = page.getContent();
 
-        List<UserDto> collect = allusers.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
+        List<UserDto> collect = users.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
+        PageableResponse<UserDto> response=new PageableResponse<>();
+        response.setContent(collect);
+        response.setPageNumber(page.getNumber());
+        response.setPageSize(page.getSize());
+        response.setTotalElements(page.getTotalElements());
+        response.setTotalPages(page.getTotalPages());
+        response.setLastPage(page.isLast());
+
         log.info("Completed Dao call for get All  Users ");
-        return collect;
+        return response;
     }
 
     /**

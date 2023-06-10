@@ -1,5 +1,6 @@
 package com.electronic.store.services;
 
+import com.electronic.store.dtos.PageableResponse;
 import com.electronic.store.dtos.UserDto;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public interface UserService {
     UserDto updateUser(UserDto userDto, String userId);
 
     //get All users
-    List<UserDto> getAllUsers(Integer pageNumber,Integer pageSize,String sortBy,String sortDir);
+    PageableResponse<UserDto> getAllUsers(Integer pageNumber, Integer pageSize, String sortBy, String sortDir);
 
     // delete User
     void deleteUser(String userId);
