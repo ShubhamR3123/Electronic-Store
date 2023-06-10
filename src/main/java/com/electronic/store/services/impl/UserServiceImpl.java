@@ -5,6 +5,7 @@ import com.electronic.store.dtos.UserDto;
 import com.electronic.store.entites.User;
 import com.electronic.store.exceptions.ResourceNotFoundException;
 import com.electronic.store.helper.AppConstants;
+import com.electronic.store.helper.Helper;
 import com.electronic.store.repositories.UserRepository;
 import com.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -78,17 +79,7 @@ public class UserServiceImpl implements UserService {
         Pageable pageable = PageRequest.of(pageNumber, pageSize,sort);
         log.info("Initiated Dao call for get All  Users ");
         Page<User> page = this.userRepository.findAll(pageable);
-        List<User> users = page.getContent();
-
-        List<UserDto> collect = users.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
-        PageableResponse<UserDto> response=new PageableResponse<>();
-        response.setContent(collect);
-        response.setPageNumber(page.getNumber());
-        response.setPageSize(page.getSize());
-        response.setTotalElements(page.getTotalElements());
-        response.setTotalPages(page.getTotalPages());
-        response.setLastPage(page.isLast());
-
+        PageableResponse<UserDto> response = Helper.getPageableResponse(page, UserDto.class);
         log.info("Completed Dao call for get All  Users ");
         return response;
     }
