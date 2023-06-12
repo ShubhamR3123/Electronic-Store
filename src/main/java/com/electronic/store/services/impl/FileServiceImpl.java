@@ -23,7 +23,7 @@ public class FileServiceImpl implements FileService {
      */
     @Override
     public String uplodImage(MultipartFile file, String path) throws IOException {
-        log.info("Initiated Dao call for uplod user image with originalFilename:{}", originalFilename);
+        log.info("Initiated Dao call for uplod user image ");
         String originalFilename = file.getOriginalFilename();
         String filename = UUID.randomUUID().toString();
         String extension = originalFilename.substring(originalFilename.lastIndexOf("."));
@@ -42,7 +42,7 @@ public class FileServiceImpl implements FileService {
             }
             //uplod
             Files.copy(file.getInputStream(), Paths.get(fullPathWithFileName));
-            log.info("Completed Dao call for uplod user image with originalFilename:{}", originalFilename);
+            log.info("Completed Dao call for uplod user image ");
             return fileNameWithExtension;
         } else {
             throw new BadApiRequest("File wit this" + extension + "Not Found ...!!" + extension);
