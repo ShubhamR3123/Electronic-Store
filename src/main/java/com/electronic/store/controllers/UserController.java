@@ -80,10 +80,10 @@ public class UserController {
             @RequestParam(value = "sortBy", defaultValue = "name", required = false) String sortBy,
             @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
 
-        log.info("Initiated request for get All User details ");
+        log.info("Initiated request for get All User details with pageNumber,pageSize:{}",pageNumber,pageSize);
         PageableResponse<UserDto> allUsers = this.userService.getAllUsers(pageNumber, pageSize, sortBy, sortDir);
 
-        log.info("Completed request for get All User details ");
+        log.info("Completed request for get All User details with pageNumber,pageSize:{}",pageNumber,pageSize);
         return new ResponseEntity<PageableResponse<UserDto>>(allUsers, HttpStatus.OK);
     }
 
@@ -152,7 +152,7 @@ public class UserController {
         user.setImageName(imageName);
         UserDto userDto = userService.updateUser(user, userId);
         ImageResponse imageResponse = ImageResponse.builder().imageName(imageName).success(true).message("Image Uplod Successfully..").status(HttpStatus.CREATED).build();
-        log.info("Completed request for uplod image details with image and userId:{}\",image,userId");
+        log.info("Completed request for uplod image details with image and userId:{}",image,userId);
         return new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
     }
 
