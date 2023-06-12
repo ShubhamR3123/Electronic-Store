@@ -1,18 +1,28 @@
 package com.electronic.store.controllers;
 
 import com.electronic.store.dtos.ApiResponseMessage;
+import com.electronic.store.dtos.ImageResponse;
 import com.electronic.store.dtos.PageableResponse;
 import com.electronic.store.dtos.UserDto;
 import com.electronic.store.helper.AppConstants;
+import com.electronic.store.services.FileService;
 import com.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 @Slf4j
@@ -22,6 +32,12 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private FileService fileService;
+
+    @Value("${user.profile.image.path}")
+    private String imageUplodPath;
 
     /**
      * @param userDto
@@ -58,14 +74,14 @@ public class UserController {
      * @apiNote This Api is used to Get All Users
      */
     @GetMapping("/")
-    public ResponseEntity<PageableResponse<UserDto>>getAllUsers(
-            @RequestParam(value = "pageNumber",defaultValue = "1",required = false)Integer pageNumber,
-            @RequestParam(value = "pageSize",defaultValue = "5",required = false)Integer pageSize,
-            @RequestParam(value = "sortBy",defaultValue = "name",required = false)String sortBy,
-            @RequestParam(value = "sortDir",defaultValue = "asc",required = false)String sortDir){
+    public ResponseEntity<PageableResponse<UserDto>> getAllUsers(
+            @RequestParam(value = "pageNumber", defaultValue = "1", required = false) Integer pageNumber,
+            @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize,
+            @RequestParam(value = "sortBy", defaultValue = "name", required = false) String sortBy,
+            @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
 
         log.info("Initiated request for get All User details ");
-        PageableResponse<UserDto> allUsers = this.userService.getAllUsers(pageNumber, pageSize,sortBy,sortDir);
+        PageableResponse<UserDto> allUsers = this.userService.getAllUsers(pageNumber, pageSize, sortBy, sortDir);
 
         log.info("Completed request for get All User details ");
         return new ResponseEntity<PageableResponse<UserDto>>(allUsers, HttpStatus.OK);
@@ -90,7 +106,7 @@ public class UserController {
      * @param userId
      * @return
      * @author Shubham Dhokchaule
-     * @apiNote This Api is used to Get Single User With Id
+     * @apiNote This Api is used to Get Single User With id
      */
     @GetMapping("/{userId}")
     public ResponseEntity<UserDto> getUserById(@PathVariable String userId) {
@@ -128,5 +144,27 @@ public class UserController {
         return new ResponseEntity<List<UserDto>>(user, HttpStatus.OK);
     }
 
+    @PostMapping("/image/{userId}")
+    public ResponseEntity<ImageResponse> uplodUserImage(@RequestParam("userImage") MultipartFile image, @PathVariable String userId) throws IOException {
+        log.info("Initiated request foruplod image details with image and userId:{}",image,userId);
+        String imageName = fileService.uplodImage(image, imageUplodPath);
+        UserDto user = userService.getUserById(userId);
+        user.setImageName(imageName);
+        UserDto userDto = userService.updateUser(user, userId);
+        ImageResponse imageResponse = ImageResponse.builder().imageName(imageName).success(true).message("Image Uplod Successfully..").status(HttpStatus.CREATED).build();
+        log.info("Completed request for uplod image details with image and userId:{}\",image,userId");
+        return new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
+    }
+
+    @GetMapping("/image/{userId}")
+    public void serveUserImage(@PathVariable String userId, HttpServletResponse response) throws IOException {
+        log.info("Initiated request for serve image details with  userId:{}",userId);
+        UserDto user = userService.getUserById(userId);
+        log.info("user image name:{}", user.getImageName());
+        InputStream resource = fileService.getResource(imageUplodPath, user.getImageName());
+        response.setContentType(MediaType.IMAGE_JPEG_VALUE);
+        StreamUtils.copy(resource, response.getOutputStream());
+        log.info("Completed request for serve image details with  userId:{}",userId);
+    }
 
 }
