@@ -8,4 +8,6 @@ public class AppConstants {
 
 
     public static final String IMAGE_UPLOD="Image Uploded Successfully";
+
+    public static final String CATEGORY_NOT_FOUND="Category Not Found With Given Id";
 }

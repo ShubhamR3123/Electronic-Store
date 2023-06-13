@@ -7,6 +7,7 @@ import com.electronic.store.dtos.UserDto;
 import com.electronic.store.helper.AppConstants;
 import com.electronic.store.services.FileService;
 import com.electronic.store.services.UserService;
+import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,7 +21,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -152,7 +152,7 @@ public class UserController {
         user.setImageName(imageName);
         UserDto userDto = userService.updateUser(user, userId);
         ImageResponse imageResponse = ImageResponse.builder().imageName(imageName).success(true).message("Image Uplod Successfully..").status(HttpStatus.CREATED).build();
-        log.info("Completed request for uplod image details with image and userId:{}",image,userId);
+        log.info("Completed request for Uplod image details with image and userId:{}",image,userId);
         return new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
     }
 
