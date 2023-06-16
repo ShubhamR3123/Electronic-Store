@@ -26,5 +26,5 @@ public interface CategoryService {
 
     //Search title
 
-    List<CategoryDto> getCategoryByTitle(String title);
+    List<CategoryDto> searchCategory(String title);
 }

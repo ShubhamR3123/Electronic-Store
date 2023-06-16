@@ -30,7 +30,7 @@ public class FileServiceImpl implements FileService {
         String fileNameWithExtension = filename + extension;
         String fullPathWithFileName = path + fileNameWithExtension;
         log.info("Full image path:{}",fullPathWithFileName);
-        if (extension.equalsIgnoreCase(".png") || extension.equalsIgnoreCase(".jpg")) {
+        if (extension.equalsIgnoreCase(".png") || extension.equalsIgnoreCase(".jpg") || extension.equalsIgnoreCase(".pdf")) {
 
             //file save
             log.info("File extension is:{}",extension);
@@ -38,7 +38,7 @@ public class FileServiceImpl implements FileService {
             if (!folder.exists()) {
 
                 //create folder
-                folder.mkdirs();
+               folder.mkdirs();
             }
             //uplod
             Files.copy(file.getInputStream(), Paths.get(fullPathWithFileName));
