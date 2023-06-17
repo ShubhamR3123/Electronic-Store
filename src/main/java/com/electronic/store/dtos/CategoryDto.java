@@ -18,7 +18,7 @@ public class CategoryDto {
     @Min(value = 4, message = "Title must be minimum of 4 characters")
     private String title;
     @NotBlank
-    @Min(value = 10, message = "Description Must be Minimun of 10characters")
+    @Min(value = 1000, message = "Description Must be Minimun of 10characters")
     private String description;
     @NotBlank
     private String coverImage;

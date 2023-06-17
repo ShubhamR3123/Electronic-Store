@@ -22,6 +22,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 @Slf4j
@@ -82,9 +83,11 @@ public class CategoryServiceImpl implements CategoryService {
      * @author Shubham Dhokchaule
      */
     @Override
-    public PageableResponse<CategoryDto> getAllCategory(Integer pageNumber, Integer pageSize, String sortBy, String sortDir) {
-        Sort sort =(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).descending());
-        Pageable pageable = PageRequest.of(pageNumber, pageSize,sort);
+    public PageableResponse<CategoryDto> getAllCategory(int pageNumber, int pageSize, String sortBy, String sortDir) {
+        Sort sort =(sortDir.equalsIgnoreCase("desc"))?
+                (Sort.by(sortBy).descending()):
+                (Sort.by(sortBy).ascending());
+        Pageable pageable = PageRequest.of(pageNumber, pageSize);
         log.info("Initiated Dao call for get All  Users ");
         Page<Category> all = this.categoryRepository.findAll(pageable);
         Page<Category> page=all;
@@ -131,10 +134,9 @@ public class CategoryServiceImpl implements CategoryService {
     public List<CategoryDto> searchCategory(String title) {
         log.info("Initiated Dao call for get Single Category With title:{}", title);
         List<Category> categoryList = this.categoryRepository.findByTitleContaining(title);
-       // List<CategoryDto> collect = categoryList.stream().map(category -> entityToDto(category)).collect(Collectors.toList());
+        List<CategoryDto> collect = categoryList.stream().map(category -> this.modelMapper.map(category, CategoryDto.class)).collect(Collectors.toList());
         log.info("Completed Dao call for get Single Category With title:{}", title);
-
-        return null;
+        return collect;
     }
 
     private Object entityToDto(Category category) {

@@ -8,11 +8,17 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -67,9 +73,9 @@ public class CategoryController {
      * @param sortDir
      * @return
      */
-    @GetMapping("/")
+    @GetMapping("/category")
     public ResponseEntity<PageableResponse<CategoryDto>> getAllCategory(
-            @RequestParam(value = "pageNumber", defaultValue = "1", required = false) Integer pageNumber,
+            @RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber,
             @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize,
             @RequestParam(value = "sortBy", defaultValue = "name", required = false) String sortBy,
             @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir
@@ -77,7 +83,7 @@ public class CategoryController {
         log.info("Initiated Request for getAll Category with pageNumber,pageSize:{}",pageNumber,pageSize);
         PageableResponse<CategoryDto> allCategory = this.categoryService.getAllCategory(pageNumber, pageSize, sortBy, sortDir);
         log.info("Completed Request for getAll Category with pageNumber,pageSize:{}",pageNumber,pageSize);
-        return new ResponseEntity<>(allCategory, HttpStatus.OK);
+        return new ResponseEntity<>(categoryService.getAllCategory(pageNumber,pageSize,sortBy,sortDir), HttpStatus.OK);
     }
 
     /**
@@ -110,15 +116,36 @@ public class CategoryController {
         return  ResponseEntity.ok(categoryById);
     }
     @PostMapping("/image/{categoryId}")
-    public ResponseEntity<ImageResponse> uplodUserImage(@RequestParam("categoryImage") MultipartFile image, @PathVariable String categoryId) throws IOException {
+    public ResponseEntity<ImageResponse> uplodCategoryImage(@RequestParam("catImage") MultipartFile image, @PathVariable String categoryId) throws IOException {
         log.info("Initiated request foruplod image details with image and userId:{}",image,categoryId);
-        String imageName = fileService.uplodImage(image, imageUplodPath);
+        String imageName = fileService.uplodFile(image, imageUplodPath);
         CategoryDto category = categoryService.getCategoryById(categoryId);
         category.setCoverImage(imageName);
         CategoryDto categoryDto = categoryService.updateCategory(category, categoryId);
         ImageResponse imageResponse = ImageResponse.builder().imageName(imageName).success(true).message("Image Uplod Successfully..").status(HttpStatus.CREATED).build();
         log.info("Completed request for Uplod image details with image and userId:{}",image,categoryId);
         return new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
+    }
+
+
+
+    @GetMapping("/search/{title}")
+    public ResponseEntity<List<CategoryDto>>searchCategory(@PathVariable("title") String title){
+        log.info("Initiated request search category with title:{}",title);
+        List<CategoryDto> searchCategory = this.categoryService.searchCategory(title);
+        log.info("Completed request search category with title:{}",title);
+        return new ResponseEntity<>(searchCategory,HttpStatus.OK);
+    }
+
+    @GetMapping("image/{categoryId}")
+    public void serveImage(@PathVariable String categoryId, HttpServletResponse response) throws IOException {
+
+        CategoryDto category = categoryService.getCategoryById(categoryId);
+        InputStream resource = fileService.getResource(imageUplodPath, category.getCoverImage());
+
+        response.setContentType(MediaType.IMAGE_JPEG_VALUE);
+        StreamUtils.copy(resource,response.getOutputStream());
+
     }
 
 }
