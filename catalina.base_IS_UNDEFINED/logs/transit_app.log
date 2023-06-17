@@ -11297,3 +11297,278 @@ java.lang.NullPointerException: Cannot invoke "org.springframework.web.multipart
 [37m2023-06-17 17:05:34,859[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
 [37m2023-06-17 17:05:34,866[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
 [37m2023-06-17 17:05:34,895[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-17 17:05:47,859[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-17 17:05:47,865[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 27708 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-17 17:05:47,866[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-17 17:05:47,867[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-17 17:05:48,040[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-17 17:05:48,040[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-17 17:05:49,800[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-17 17:05:50,003[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 179 ms. Found 2 JPA repository interfaces.
+[37m2023-06-17 17:05:51,693[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-17 17:05:51,718[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-17 17:05:51,719[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-17 17:05:51,719[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-17 17:05:51,964[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-17 17:05:51,965[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 3923 ms
+[37m2023-06-17 17:05:52,297[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-17 17:05:52,422[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-17 17:05:52,846[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-17 17:05:53,224[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-17 17:05:53,653[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-17 17:05:53,684[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-17 17:05:55,158[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-17 17:05:55,177[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-17 17:05:56,163[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-17 17:05:56,835[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-17 17:05:56,861[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-17 17:05:56,914[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-17 17:05:56,935[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 10.02 seconds (JVM running for 11.675)
+[37m2023-06-17 17:06:56,142[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-17 17:06:56,142[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-17 17:06:56,144[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 2 ms
+[37m2023-06-17 17:06:56,230[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:06:56,345[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:07:40,670[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for delete Category with categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:07:40,670[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Delete Category With categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:07:40,758[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for Delete Category With categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:07:40,760[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for delete Category with categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:08:12,981[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for create Category
+[37m2023-06-17 17:08:12,981[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao Call For Create Category
+[37m2023-06-17 17:08:13,039[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao Call For Create Category
+[37m2023-06-17 17:08:13,039[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for create Category
+[37m2023-06-17 17:08:18,604[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for get single Category with categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:08:18,604[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:08:18,612[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.e.GlobalExceptionHandler[0;39m::[35m?[0;39m: - Resource Not Found Exception...!!
+[37m2023-06-17 17:08:18,614[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m::[35m?[0;39m: - Resolved [com.electronic.store.exceptions.ResourceNotFoundException: Category Not Found With Given Id9aac33f8-dbb9-4ace-b2a6-28155421276f]
+[37m2023-06-17 17:08:26,444[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for getAll Category with pageNumber,pageSize:0
+[37m2023-06-17 17:08:26,447[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get All  Users 
+[37m2023-06-17 17:08:26,682[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for getAll Category with pageNumber,pageSize:0
+[37m2023-06-17 17:08:26,682[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get All  Users 
+[37m2023-06-17 17:08:39,073[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-7[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for get single Category with categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:08:39,073[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-7[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:9aac33f8-dbb9-4ace-b2a6-28155421276f
+[37m2023-06-17 17:08:39,080[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-7[0;39m] [33mc.e.s.e.GlobalExceptionHandler[0;39m::[35m?[0;39m: - Resource Not Found Exception...!!
+[37m2023-06-17 17:08:39,082[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-7[0;39m] [33mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m::[35m?[0;39m: - Resolved [com.electronic.store.exceptions.ResourceNotFoundException: Category Not Found With Given Id9aac33f8-dbb9-4ace-b2a6-28155421276f]
+[37m2023-06-17 17:08:53,341[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for get single Category with categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:08:53,341[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:08:53,350[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:08:53,352[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for get Single Category with categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:09:05,161[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated request foruplod image details with image and userId:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6ce2b806
+[37m2023-06-17 17:09:05,161[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for uplod user image 
+[37m2023-06-17 17:09:05,161[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Full image path:images/categories/9b8c1b5e-5101-4dec-b420-c05dde4f5948.png
+[37m2023-06-17 17:09:05,161[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - File extension is:.png
+[37m2023-06-17 17:09:05,166[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for uplod user image 
+[37m2023-06-17 17:09:05,166[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:09:05,171[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:09:05,172[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao Call For update  Category with categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:09:05,187[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao Call For Create Category with categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:09:05,190[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed request for Uplod image details with image and userId:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6ce2b806
+[37m2023-06-17 17:09:05,205[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mo.s.w.m.s.StandardServletMultipartResolver[0;39m::[35m?[0;39m: - Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	... 44 common frames omitted
+[37m2023-06-17 17:09:05,209[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mo.a.c.h.Http11Processor[0;39m::[35m?[0;39m: - Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	... 13 common frames omitted
+[37m2023-06-17 17:09:05,214[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:419)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	... 13 common frames omitted
+[37m2023-06-17 17:09:05,216[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mo.a.t.u.n.NioEndpoint[0;39m::[35m?[0;39m: - Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1415)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000000.tmp
+	... 14 common frames omitted
+[37m2023-06-17 17:09:18,845[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:09:18,850[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:d200bfd2-cac3-4110-9d22-a0c522f90d5b
+[37m2023-06-17 17:10:34,666[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for create Category
+[37m2023-06-17 17:10:34,666[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao Call For Create Category
+[37m2023-06-17 17:10:34,676[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao Call For Create Category
+[37m2023-06-17 17:10:34,676[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for create Category
+[37m2023-06-17 17:10:49,941[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for get single Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:10:49,941[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:10:49,945[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:10:49,945[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for get Single Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:11:16,982[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated request foruplod image details with image and userId:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@124d80b5
+[37m2023-06-17 17:11:16,983[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for uplod user image 
+[37m2023-06-17 17:11:16,983[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Full image path:images/categories/4db56100-a2dc-4dd8-a109-6085350a1f39.png
+[37m2023-06-17 17:11:16,983[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - File extension is:.png
+[37m2023-06-17 17:11:17,231[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for uplod user image 
+[37m2023-06-17 17:11:17,231[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:11:17,237[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:11:17,237[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao Call For update  Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:11:17,248[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao Call For Create Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:11:17,251[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed request for Uplod image details with image and userId:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@124d80b5
+[37m2023-06-17 17:11:17,255[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mo.s.w.m.s.StandardServletMultipartResolver[0;39m::[35m?[0;39m: - Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000001.tmp
+	... 44 common frames omitted
+[37m2023-06-17 17:11:17,262[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mo.a.c.h.Http11Processor[0;39m::[35m?[0;39m: - Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000001.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.2440839366541258542\work\Tomcat\localhost\ROOT\upload_943caaab_ea40_4b41_85a0_f2416d205bb4_00000001.tmp
+	... 13 common frames omitted
+[37m2023-06-17 17:11:29,786[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated request search category with title:Computer
+[37m2023-06-17 17:11:29,786[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With title:Computer
+[37m2023-06-17 17:11:29,817[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With title:Computer
+[37m2023-06-17 17:11:29,817[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-8[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed request search category with title:Computer
+[37m2023-06-17 17:11:40,161[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:11:40,165[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-9[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:12:51,614[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for getAll Category with pageNumber,pageSize:0
+[37m2023-06-17 17:12:51,614[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get All  Users 
+[37m2023-06-17 17:12:51,624[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for getAll Category with pageNumber,pageSize:0
+[37m2023-06-17 17:12:51,625[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get All  Users 
+[37m2023-06-17 17:13:02,444[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for getAll Category with pageNumber,pageSize:0
+[37m2023-06-17 17:13:02,444[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get All  Users 
+[37m2023-06-17 17:13:02,458[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for getAll Category with pageNumber,pageSize:0
+[37m2023-06-17 17:13:02,458[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get All  Users 
+[37m2023-06-17 17:13:06,536[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for get single Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:13:06,536[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:13:06,541[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:13:06,541[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for get Single Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:13:11,959[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated request search category with title:Computer
+[37m2023-06-17 17:13:11,959[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With title:Computer
+[37m2023-06-17 17:13:11,961[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With title:Computer
+[37m2023-06-17 17:13:11,961[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed request search category with title:Computer
+[37m2023-06-17 17:13:15,373[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-17 17:13:15,377[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
