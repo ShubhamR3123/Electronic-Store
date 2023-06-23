@@ -1,6 +1,9 @@
 package com.electronic.store.controllers;
 
-import com.electronic.store.dtos.*;
+import com.electronic.store.dtos.ApiResponseMessage;
+import com.electronic.store.dtos.CategoryDto;
+import com.electronic.store.dtos.ImageResponse;
+import com.electronic.store.dtos.PageableResponse;
 import com.electronic.store.helper.AppConstants;
 import com.electronic.store.services.CategoryService;
 import com.electronic.store.services.FileService;
@@ -15,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.FileNotFoundException;
+import java.beans.Transient;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -41,6 +44,7 @@ public class CategoryController {
      * @author Shubham Dhokchaule
      * @apiNote THis Api is Used for Create Category
      */
+
     @PostMapping("/")
     public ResponseEntity<CategoryDto> createCategory(@RequestBody CategoryDto categoryDto) {
         log.info("Initiated Request for create Category");
