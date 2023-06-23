@@ -13,7 +13,7 @@ public interface CategoryService {
 
     //update Category
 
-    CategoryDto updateCategory(CategoryDto categoryDto,String categoryId);
+    CategoryDto updateCategory(CategoryDto categoryDto, String categoryId);
 
     //get All Category
     PageableResponse<CategoryDto> getAllCategory(int pageNumber, int pageSize, String sortBy, String sortDir);

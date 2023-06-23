@@ -13215,3 +13215,637 @@ java.sql.SQLSyntaxErrorException: Table 'electronic_store.products' doesn't exis
 [37m2023-06-18 00:53:44,483[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
 [37m2023-06-18 00:53:44,487[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
 [37m2023-06-18 00:53:44,498[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:02:32,614[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 6340 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:02:32,614[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:02:32,616[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:02:32,616[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:02:32,720[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:02:32,721[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:02:33,765[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:02:33,984[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 201 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:02:35,109[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:02:35,124[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:02:35,124[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:02:35,124[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:02:35,258[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:02:35,258[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 2536 ms
+[37m2023-06-23 12:02:35,501[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:02:35,618[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:02:35,938[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:02:36,105[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:02:36,579[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:02:36,612[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:02:37,786[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:02:37,798[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:02:38,465[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:02:38,906[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:02:38,924[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:02:38,951[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:02:38,964[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 6.875 seconds (JVM running for 8.169)
+[37m2023-06-23 12:04:35,824[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-23 12:04:35,824[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-23 12:04:35,826[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 2 ms
+[37m2023-06-23 12:04:36,007[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Save//Create Product
+[37m2023-06-23 12:04:36,256[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for Save//Create Product
+[37m2023-06-23 12:05:06,455[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:0
+[37m2023-06-23 12:05:06,676[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - completed Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:0
+[37m2023-06-23 12:05:33,056[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.a.c.c.C.[.[.[.[dispatcherServlet][0;39m::[35m?[0;39m: - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
+org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:210)
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:193)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[37m2023-06-23 12:06:23,529[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mFile Watcher[0;39m] [33mo.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener[0;39m::[35m?[0;39m: - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+[37m2023-06-23 12:06:23,545[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Pausing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:06:23,545[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Stopping service [Tomcat]
+[37m2023-06-23 12:06:23,547[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[37m2023-06-23 12:06:23,552[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Stopping ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:06:23,554[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Destroying ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:06:23,557[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:06:23,562[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 12:06:23,567[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mThread-9[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:06:31,143[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:06:31,145[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 8052 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:06:31,147[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:06:31,147[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:06:31,231[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:06:31,231[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:06:32,254[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:06:32,346[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:06:33,477[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:06:33,502[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:06:33,503[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:06:33,503[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:06:33,670[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:06:33,670[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 2437 ms
+[37m2023-06-23 12:06:33,905[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:06:33,999[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:06:34,302[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:06:34,461[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:06:34,691[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:06:34,719[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:06:35,638[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:06:35,647[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:06:36,322[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:06:36,756[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:06:36,771[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:06:36,796[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:06:36,810[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 6.173 seconds (JVM running for 7.187)
+[37m2023-06-23 12:06:41,906[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-23 12:06:41,906[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-23 12:06:41,907[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 1 ms
+[37m2023-06-23 12:06:41,993[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.a.c.c.C.[.[.[.[dispatcherServlet][0;39m::[35m?[0;39m: - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
+org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:210)
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:193)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[37m2023-06-23 12:08:45,121[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for uplod user image 
+[37m2023-06-23 12:08:45,122[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Full image path:images/products/221b3c3a-9f13-48ec-8bce-f17ff413af3a.png
+[37m2023-06-23 12:08:45,122[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - File extension is:.png
+[37m2023-06-23 12:08:45,150[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.FileServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for uplod user image 
+[37m2023-06-23 12:08:45,150[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Get Single Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:08:45,231[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Get Single Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:08:45,259[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Update Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:08:45,297[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for Update Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:08:45,313[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.s.w.m.s.StandardServletMultipartResolver[0;39m::[35m?[0;39m: - Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	... 44 common frames omitted
+[37m2023-06-23 12:08:45,314[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.a.c.h.Http11Processor[0;39m::[35m?[0;39m: - Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	... 13 common frames omitted
+[37m2023-06-23 12:08:45,317[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:419)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	... 13 common frames omitted
+[37m2023-06-23 12:08:45,318[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.a.t.u.n.NioEndpoint[0;39m::[35m?[0;39m: - Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1415)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\SMART\AppData\Local\Temp\tomcat.9090.13924354164188072003\work\Tomcat\localhost\ROOT\upload_d5cbccaa_2373_4a89_8179_c73c6f6a50f1_00000000.tmp
+	... 14 common frames omitted
+[37m2023-06-23 12:14:38,402[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:14:38,405[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 12:14:38,420[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:14:46,680[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:14:46,694[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 14184 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:14:46,694[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:14:46,696[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:14:46,871[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:14:46,871[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:14:48,334[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:14:48,483[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 130 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:14:49,758[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:14:49,781[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:14:49,781[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:14:49,782[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:14:49,971[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:14:49,971[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 3098 ms
+[37m2023-06-23 12:14:50,259[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:14:50,374[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:14:50,743[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:14:50,942[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:14:51,324[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:14:51,376[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:14:52,729[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:14:52,746[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:14:53,556[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:14:54,040[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:14:54,059[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:14:54,089[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:14:54,101[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 8.191 seconds (JVM running for 9.804)
+[37m2023-06-23 12:15:05,702[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-23 12:15:05,702[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-23 12:15:05,703[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 1 ms
+[37m2023-06-23 12:15:05,774[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Get Single Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:15:05,846[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Get Single Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:15:05,875[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.e.GlobalExceptionHandler[0;39m::[35m?[0;39m: - File Not Found..!!
+[37m2023-06-23 12:15:05,958[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m::[35m?[0;39m: - Resolved [java.io.FileNotFoundException: images\products\Xyz.jpg (The system cannot find the file specified)]
+[37m2023-06-23 12:15:39,948[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:15:39,952[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 12:15:39,963[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:15:46,756[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:15:46,760[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 14832 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:15:46,761[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:15:46,762[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:15:46,849[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:15:46,849[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:15:47,803[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:15:47,936[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 108 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:15:49,079[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:15:49,099[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:15:49,100[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:15:49,100[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:15:49,249[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:15:49,249[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 2399 ms
+[37m2023-06-23 12:15:49,477[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:15:49,544[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:15:49,770[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:15:49,897[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:15:50,067[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:15:50,085[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:15:50,856[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:15:50,867[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:15:51,721[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:15:52,190[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:15:52,206[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:15:52,235[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:15:52,246[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 5.988 seconds (JVM running for 7.011)
+[37m2023-06-23 12:16:07,920[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-23 12:16:07,920[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-23 12:16:07,921[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 1 ms
+[37m2023-06-23 12:16:07,990[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated request search category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:16:07,990[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:16:08,096[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for get Single Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:16:08,156[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed request search category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:16:21,799[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Get Single Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:16:21,810[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Get Single Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:16:21,816[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mc.e.s.e.GlobalExceptionHandler[0;39m::[35m?[0;39m: - File Not Found..!!
+[37m2023-06-23 12:16:21,877[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-3[0;39m] [33mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[0;39m::[35m?[0;39m: - Resolved [java.io.FileNotFoundException: images\products\Xyz.jpg (The system cannot find the file specified)]
+[37m2023-06-23 12:25:56,297[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:25:56,301[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 12:25:56,311[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:26:02,640[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 12988 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:26:02,640[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:26:02,643[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:26:02,644[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:26:02,745[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:26:02,745[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:26:03,751[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:26:03,849[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:26:04,849[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:26:04,870[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:26:04,871[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:26:04,871[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:26:05,024[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:26:05,024[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 2278 ms
+[37m2023-06-23 12:26:05,256[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:26:05,330[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:26:05,521[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:26:05,645[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:26:05,873[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:26:05,896[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:26:06,744[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:26:06,754[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:26:07,453[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:26:07,876[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:26:07,893[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:26:07,923[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:26:07,937[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 5.81 seconds (JVM running for 6.832)
+[37m2023-06-23 12:26:30,590[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-23 12:26:30,590[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-23 12:26:30,592[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 2 ms
+[37m2023-06-23 12:26:30,659[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Delete Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:26:30,741[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - 
+[37m2023-06-23 12:26:30,786[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-1[0;39m] [33mc.e.s.s.i.ProductServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for delete Product with productId:9aee32dc-4d55-4bf9-abf3-15eda604c1b5
+[37m2023-06-23 12:31:37,177[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:31:37,181[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 12:31:37,192[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:31:42,925[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:31:42,929[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 660 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:31:42,930[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:31:42,930[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:31:43,030[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:31:43,030[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:31:43,957[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:31:44,063[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:31:45,056[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:31:45,069[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:31:45,069[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:31:45,070[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:31:45,194[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:31:45,194[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 2162 ms
+[37m2023-06-23 12:31:45,407[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:31:45,488[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:31:45,729[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:31:45,892[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:31:46,115[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:31:46,138[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:31:47,033[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:31:47,044[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:31:47,708[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:31:48,108[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:31:48,123[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:31:48,147[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:31:48,161[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 5.765 seconds (JVM running for 6.712)
+[37m2023-06-23 12:34:52,037[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:34:52,044[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 12:34:52,059[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:35:02,838[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:35:02,843[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 12844 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:35:02,843[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:35:02,844[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:35:02,947[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:35:02,947[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:35:03,934[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:35:04,069[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 112 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:35:05,323[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:35:05,340[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:35:05,340[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:35:05,342[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:35:05,476[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:35:05,476[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 2527 ms
+[37m2023-06-23 12:35:05,727[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:35:05,804[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:35:06,147[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:35:06,299[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:35:06,600[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:35:06,625[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:35:07,860[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:35:07,870[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:35:08,988[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:35:09,647[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:35:09,667[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:35:09,713[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:35:09,732[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 7.4 seconds (JVM running for 8.405)
+[37m2023-06-23 12:35:18,166[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-23 12:35:18,166[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-23 12:35:18,168[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 2 ms
+[37m2023-06-23 12:35:18,280[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Initiated Request for delete Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:35:18,280[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Delete Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:35:18,457[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.s.i.CategoryServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for Delete Category With categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:35:18,461[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-4[0;39m] [33mc.e.s.c.CategoryController[0;39m::[35m?[0;39m: - Completed Request for delete Category with categoryId:56a40dcc-b9d8-4f87-a4cd-2331cab6a446
+[37m2023-06-23 12:36:44,383[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:36:44,385[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 12:36:44,395[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.
+[37m2023-06-23 12:36:54,316[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Starting ElectronicStoreApplication using Java 17.0.6 on DESKTOP-1MMPM7K with PID 11084 (F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store\target\classes started by SMART in F:\SHUBHAM\Intelij Workspace\PaidProject\Electronic-Store)
+[37m2023-06-23 12:36:54,314[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mbackground-preinit[0;39m] [33mo.h.v.i.util.Version[0;39m::[35m?[0;39m: - HV000001: Hibernate Validator 6.2.5.Final
+[37m2023-06-23 12:36:54,318[0;39m [39mDEBUG[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Running with Spring Boot v2.7.11, Spring v5.3.27
+[37m2023-06-23 12:36:54,319[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - No active profile set, falling back to 1 default profile: "default"
+[37m2023-06-23 12:36:54,410[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[37m2023-06-23 12:36:54,410[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m::[35m?[0;39m: - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[37m2023-06-23 12:36:55,440[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[37m2023-06-23 12:36:55,552[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m::[35m?[0;39m: - Finished Spring Data repository scanning in 96 ms. Found 3 JPA repository interfaces.
+[37m2023-06-23 12:36:56,769[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat initialized with port(s): 9090 (http)
+[37m2023-06-23 12:36:56,785[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Initializing ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:36:56,785[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardService[0;39m::[35m?[0;39m: - Starting service [Tomcat]
+[37m2023-06-23 12:36:56,786[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.StandardEngine[0;39m::[35m?[0;39m: - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[37m2023-06-23 12:36:56,931[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring embedded WebApplicationContext
+[37m2023-06-23 12:36:56,931[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m::[35m?[0;39m: - Root WebApplicationContext: initialization completed in 2519 ms
+[37m2023-06-23 12:36:57,182[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.j.i.u.LogHelper[0;39m::[35m?[0;39m: - HHH000204: Processing PersistenceUnitInfo [name: default]
+[37m2023-06-23 12:36:57,274[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.hibernate.Version[0;39m::[35m?[0;39m: - HHH000412: Hibernate ORM core version 5.6.15.Final
+[37m2023-06-23 12:36:57,589[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.a.common.Version[0;39m::[35m?[0;39m: - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[37m2023-06-23 12:36:57,726[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Starting...
+[37m2023-06-23 12:36:57,968[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Start completed.
+[37m2023-06-23 12:36:57,989[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.dialect.Dialect[0;39m::[35m?[0;39m: - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+[37m2023-06-23 12:36:59,039[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m::[35m?[0;39m: - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m2023-06-23 12:36:59,060[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 12:36:59,886[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m::[35m?[0;39m: - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[37m2023-06-23 12:37:00,395[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.d.a.OptionalLiveReloadServer[0;39m::[35m?[0;39m: - LiveReload server is running on port 35729
+[37m2023-06-23 12:37:00,420[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.a.c.h.Http11NioProtocol[0;39m::[35m?[0;39m: - Starting ProtocolHandler ["http-nio-9090"]
+[37m2023-06-23 12:37:00,464[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mo.s.b.w.e.t.TomcatWebServer[0;39m::[35m?[0;39m: - Tomcat started on port(s): 9090 (http) with context path ''
+[37m2023-06-23 12:37:00,482[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mrestartedMain[0;39m] [33mc.e.s.ElectronicStoreApplication[0;39m::[35m?[0;39m: - Started ElectronicStoreApplication in 6.694 seconds (JVM running for 7.594)
+[37m2023-06-23 12:37:13,195[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.a.c.c.C.[.[.[/][0;39m::[35m?[0;39m: - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[37m2023-06-23 12:37:13,195[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Initializing Servlet 'dispatcherServlet'
+[37m2023-06-23 12:37:13,198[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.s.w.s.DispatcherServlet[0;39m::[35m?[0;39m: - Completed initialization in 2 ms
+[37m2023-06-23 12:37:13,304[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.c.UserController[0;39m::[35m?[0;39m: - Initiated request for delete user  details with userId:947897da-eb39-4196-ad5e-680630191b36
+[37m2023-06-23 12:37:13,304[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mc.e.s.s.i.UserServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Delete User With userId:947897da-eb39-4196-ad5e-680630191b36
+[37m2023-06-23 12:37:13,462[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-2[0;39m] [33mo.a.c.c.C.[.[.[.[dispatcherServlet][0;39m::[35m?[0;39m: - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.nio.file.InvalidPathException: Trailing char < > at index 13: images/users/ ] with root cause
+java.nio.file.InvalidPathException: Trailing char < > at index 13: images/users/ 
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:191)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.of(Path.java:147)
+	at java.base/java.nio.file.Paths.get(Paths.java:69)
+	at com.electronic.store.services.impl.UserServiceImpl.deleteUser(UserServiceImpl.java:107)
+	at com.electronic.store.controllers.UserController.deleteUser(UserController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:561)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[37m2023-06-23 12:37:19,183[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.c.UserController[0;39m::[35m?[0;39m: - Initiated request for delete user  details with userId:947897da-eb39-4196-ad5e-680630191b36
+[37m2023-06-23 12:37:19,183[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mc.e.s.s.i.UserServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Delete User With userId:947897da-eb39-4196-ad5e-680630191b36
+[37m2023-06-23 12:37:19,194[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-5[0;39m] [33mo.a.c.c.C.[.[.[.[dispatcherServlet][0;39m::[35m?[0;39m: - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.nio.file.InvalidPathException: Trailing char < > at index 13: images/users/ ] with root cause
+java.nio.file.InvalidPathException: Trailing char < > at index 13: images/users/ 
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:191)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.of(Path.java:147)
+	at java.base/java.nio.file.Paths.get(Paths.java:69)
+	at com.electronic.store.services.impl.UserServiceImpl.deleteUser(UserServiceImpl.java:107)
+	at com.electronic.store.controllers.UserController.deleteUser(UserController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:561)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[37m2023-06-23 12:40:37,320[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.c.UserController[0;39m::[35m?[0;39m: - Initiated request for delete user  details with userId:f31cf4c7-75f8-4891-9fb0-b1b490d5e3bd
+[37m2023-06-23 12:40:37,320[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.UserServiceImpl[0;39m::[35m?[0;39m: - Initiated Dao call for Delete User With userId:f31cf4c7-75f8-4891-9fb0-b1b490d5e3bd
+[37m2023-06-23 12:40:37,332[0;39m [1;31mERROR[0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.UserServiceImpl[0;39m::[35m?[0;39m: - 
+[37m2023-06-23 12:40:37,436[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.s.i.UserServiceImpl[0;39m::[35m?[0;39m: - Completed Dao call for Delete User With userId:f31cf4c7-75f8-4891-9fb0-b1b490d5e3bd
+[37m2023-06-23 12:40:37,694[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mhttp-nio-9090-exec-6[0;39m] [33mc.e.s.c.UserController[0;39m::[35m?[0;39m: - Completed request for delete user  details with userId:f31cf4c7-75f8-4891-9fb0-b1b490d5e3bd
+[37m2023-06-23 17:23:21,208[0;39m [31mWARN [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mHikariPool-1 housekeeper[0;39m] [33mc.z.h.p.HikariPool[0;39m::[35m?[0;39m: - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h41m29s647ms80µs100ns).
+[37m2023-06-23 18:03:06,529[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m::[35m?[0;39m: - Closing JPA EntityManagerFactory for persistence unit 'default'
+[37m2023-06-23 18:03:06,537[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown initiated...
+[37m2023-06-23 18:03:06,545[0;39m [34mINFO [0;39m [[36mtraceId: [0;39m] [[36msourceIp: [0;39m] [[36muserId: [0;39m] [[32mSpringApplicationShutdownHook[0;39m] [33mc.z.h.HikariDataSource[0;39m::[35m?[0;39m: - HikariPool-1 - Shutdown completed.

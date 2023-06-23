@@ -33,7 +33,7 @@ public class CustomFieldsDto {
     @CreationTimestamp
     private LocalDateTime createdOn;
 
-    @Column(name = "modified_by",nullable = false)
+    @Column(name = "modified_by", nullable = false)
     @LastModifiedBy
     private String LastModifiedBy;
 

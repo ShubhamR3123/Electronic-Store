@@ -11,12 +11,18 @@ import com.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -24,6 +30,9 @@ import java.util.stream.Collectors;
 @Slf4j
 @Service
 public class UserServiceImpl implements UserService {
+
+    @Value("${user.profile.image.path}")
+    private String imageUplodPath;
     @Autowired
     private UserRepository userRepository;
     @Autowired
@@ -75,12 +84,12 @@ public class UserServiceImpl implements UserService {
     @Override
     public PageableResponse<UserDto> getAllUsers(Integer pageNumber, Integer pageSize, String sortBy, String sortDir) {
 
-        Sort sort =(sortDir.equalsIgnoreCase("desc"))?(Sort.by(sortBy).descending()):(Sort.by(sortBy).descending());
-        Pageable pageable = PageRequest.of(pageNumber, pageSize,sort);
-        log.info("Initiated Dao call for get All  Users ");
+        Sort sort = (sortDir.equalsIgnoreCase("desc")) ? (Sort.by(sortBy).descending()) : (Sort.by(sortBy).descending());
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, sort);
+        log.info("Initiated Dao call for get All  Users with pageNumber,pageSize,sortBy,sortDir:{}", pageNumber, pageSize, sortBy, sortDir);
         Page<User> page = this.userRepository.findAll(pageable);
         PageableResponse<UserDto> response = Helper.getPageableResponse(page, UserDto.class);
-        log.info("Completed Dao call for get All  Users ");
+        log.info("Completed Dao call for get All  Users with pageNumber,pageSize,sortBy,sortDir:{}", pageNumber, pageSize, sortBy, sortDir);
         return response;
     }
 
@@ -93,6 +102,15 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(String userId) {
         log.info("Initiated Dao call for Delete User With userId:{}", userId);
         User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
+        String fullPath = imageUplodPath + user.getImageName();
+        try {
+            Path path = Paths.get(fullPath);
+            Files.delete(path);
+        } catch (NoSuchFileException e) {
+            log.error("Image not found in Folder..:{}", e.getMessage());
+        } catch (IOException e) {
+            log.error("Unable to found image:{}", e.getMessage());
+        }
         userRepository.delete(user);
         log.info("Completed Dao call for Delete User With userId:{}", userId);
 

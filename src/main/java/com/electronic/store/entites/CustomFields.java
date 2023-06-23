@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 @ToString
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public class CustomFields  {
+public class CustomFields {
 
     @Column(name = "is_active_switch")
     private String isActive;

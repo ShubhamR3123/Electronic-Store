@@ -11,11 +11,17 @@ import com.electronic.store.services.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -25,6 +31,8 @@ import java.util.stream.Collectors;
 @Slf4j
 public class ProductServiceImpl implements ProductService {
 
+    @Value("${product.profile.image.path}")
+    private String imageUplodPath;
     @Autowired
     private ProductRepository productRepository;
 
@@ -64,7 +72,7 @@ public class ProductServiceImpl implements ProductService {
         updateProduct.setQuantity(productDto.getQuantity());
         updateProduct.setPrice(productDto.getPrice());
         updateProduct.setDiscounted_price(productDto.getDiscounted_price());
-       // updateProduct.setAddedDate(productDto.getAddedDate());
+        // updateProduct.setAddedDate(productDto.getAddedDate());
         updateProduct.setStock(productDto.isStock());
         updateProduct.setLive(productDto.isLive());
         Product product = this.productRepository.save(updateProduct);
@@ -77,30 +85,40 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public void deleteProduct(String productId) {
-        log.info("Initiated Dao call for Delete Product with productId:{}",productId);
+        log.info("Initiated Dao call for Delete Product with productId:{}", productId);
         Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.PRODUCT_NOT_FOUND + productId));
-       this.productRepository.delete(product);
-        log.info("Completed Dao call for delete Product with productId:{}",productId);
+
+        String fullPath = imageUplodPath + product.getImageName();
+        try {
+            Path path = Paths.get(fullPath);
+            Files.delete(path);
+        } catch (NoSuchFileException e) {
+            log.error("image not found in folder:{}", e.getMessage());
+        } catch (IOException e) {
+            log.error("unale to found image:{}", e.getMessage());
+        }
+        this.productRepository.delete(product);
+        log.info("Completed Dao call for delete Product with productId:{}", productId);
 
 
     }
 
     /**
-     * @author Shubham Dhokchaule
      * @param pageNumber
      * @param pageSize
      * @param sortBy
      * @param sortDir
      * @return
+     * @author Shubham Dhokchaule
      */
     @Override
     public PageableResponse<ProductDto> getAllProduct(Integer pageNumber, Integer pageSize, String sortBy, String sortDir) {
-        log.info("Initiated Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}",pageNumber,pageSize,sortBy,sortDir);
-        Sort sort=(sortDir.equalsIgnoreCase("desc"))? (Sort.by(sortBy).descending()):(Sort.by(sortBy).descending());
-        PageRequest pageable = PageRequest.of(pageNumber, pageSize,sort);
+        log.info("Initiated Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}", pageNumber, pageSize, sortBy, sortDir);
+        Sort sort = (sortDir.equalsIgnoreCase("desc")) ? (Sort.by(sortBy).descending()) : (Sort.by(sortBy).descending());
+        PageRequest pageable = PageRequest.of(pageNumber, pageSize, sort);
         Page<Product> all = this.productRepository.findAll(pageable);
-        Page<Product>page = all;
-        log.info("completed Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}",pageNumber,pageSize,sortBy,sortDir);
+        Page<Product> page = all;
+        log.info("completed Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}", pageNumber, pageSize, sortBy, sortDir);
         return Helper.getPageableResponse(page, ProductDto.class);
     }
 
@@ -110,10 +128,10 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public ProductDto getSingleProduct(String productId) {
-        log.info("Initiated Dao call for Get Single Product with productId:{}",productId);
+        log.info("Initiated Dao call for Get Single Product with productId:{}", productId);
         Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.PRODUCT_NOT_FOUND + productId));
-        log.info("Initiated Dao call for Get Single Product with productId:{}",productId);
-        return modelMapper.map(product,ProductDto.class);
+        log.info("Initiated Dao call for Get Single Product with productId:{}", productId);
+        return modelMapper.map(product, ProductDto.class);
     }
 
     /**
@@ -121,11 +139,11 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public PageableResponse getAllLive(Integer pageNumber, Integer pageSize, String sortBy, String sortDir) {
-        log.info("Initiated Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}",pageNumber,pageSize,sortBy,sortDir);
-        Sort sort=(sortDir.equalsIgnoreCase("desc"))? (Sort.by(sortBy).descending()):(Sort.by(sortBy).descending());
-        PageRequest pageable = PageRequest.of(pageNumber, pageSize,sort);
+        log.info("Initiated Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}", pageNumber, pageSize, sortBy, sortDir);
+        Sort sort = (sortDir.equalsIgnoreCase("desc")) ? (Sort.by(sortBy).descending()) : (Sort.by(sortBy).descending());
+        PageRequest pageable = PageRequest.of(pageNumber, pageSize, sort);
         Page<Product> all = this.productRepository.findByLiveTrue(pageable);
-        Page<Product>page = all;
+        Page<Product> page = all;
         return Helper.getPageableResponse(page, ProductDto.class);
     }
 
@@ -138,14 +156,14 @@ public class ProductServiceImpl implements ProductService {
      * @return
      */
 
-    public PageableResponse<ProductDto>searchByTitle(String title,Integer pageNumber, Integer pageSize, String sortBy, String sortDir){
-        log.info("Initiated Dao call for Serach  Product with title:{}",title);
-        log.info("Initiated Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}",pageNumber,pageSize,sortBy,sortDir);
-        Sort sort=(sortDir.equalsIgnoreCase("desc"))? (Sort.by(sortBy).descending()):(Sort.by(sortBy).descending());
-        PageRequest pageable = PageRequest.of(pageNumber, pageSize,sort);
-        Page<Product> all = this.productRepository.findByTitleContaining(title,pageable);
-        Page<Product>page = all;
-        log.info("Completed Dao call for Serach  Product with title:{}",title);
+    public PageableResponse<ProductDto> searchByTitle(String title, Integer pageNumber, Integer pageSize, String sortBy, String sortDir) {
+        log.info("Initiated Dao call for Serach  Product with title:{}", title);
+        log.info("Initiated Dao call for Get All Product with pageSize,pageNumber,sortBy,sortDir:{}", pageNumber, pageSize, sortBy, sortDir);
+        Sort sort = (sortDir.equalsIgnoreCase("desc")) ? (Sort.by(sortBy).descending()) : (Sort.by(sortBy).descending());
+        PageRequest pageable = PageRequest.of(pageNumber, pageSize, sort);
+        Page<Product> all = this.productRepository.findByTitleContaining(title, pageable);
+        Page<Product> page = all;
+        log.info("Completed Dao call for Serach  Product with title:{}", title);
         return Helper.getPageableResponse(page, ProductDto.class);
 
     }

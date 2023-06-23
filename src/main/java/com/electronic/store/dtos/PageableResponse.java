@@ -9,10 +9,10 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class PageableResponse <T>{
+public class PageableResponse<T> {
 
 
-    private List<T>content;
+    private List<T> content;
     private int pageSize;
     private int pageNumber;
 

@@ -9,7 +9,8 @@ import java.io.InputStream;
 public interface FileService {
 
     public String uplodImage(MultipartFile file, String path) throws IOException;
+
     public String uplodFile(MultipartFile file, String path) throws IOException;
 
-    InputStream getResource(String path,String name) throws FileNotFoundException;
+    InputStream getResource(String path, String name) throws FileNotFoundException;
 }

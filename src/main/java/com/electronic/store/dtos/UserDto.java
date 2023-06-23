@@ -38,8 +38,4 @@ public class UserDto extends CustomFieldsDto {
     private String imageName;
 
 
-
-
-
-
 }
