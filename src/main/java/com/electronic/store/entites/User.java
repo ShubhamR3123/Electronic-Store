@@ -11,10 +11,10 @@ import javax.persistence.*;
 @Builder
 @Entity
 @Table(name = "users")
-public class User extends CustomFields{
+public class User extends CustomFields {
 
 
-   // @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private String userId;
     @Column(name = "user_name", nullable = false)

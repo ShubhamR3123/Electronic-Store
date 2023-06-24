@@ -9,8 +9,10 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
+
 @Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -36,13 +38,23 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<Map<String, String>>(map, HttpStatus.BAD_REQUEST);
 
     }
+
     //Handle bad api exception
     @ExceptionHandler(BadApiRequest.class)
-    public ResponseEntity<ApiResponseMessage>handleBadApiRequest(BadApiRequest ex) {
+    public ResponseEntity<ApiResponseMessage> handleBadApiRequest(BadApiRequest ex) {
         log.info("Bad Api Request..!!");
         String message = ex.getMessage();
         ApiResponseMessage apiResponse = new ApiResponseMessage(HttpStatus.BAD_REQUEST, false, message);
         return new ResponseEntity<ApiResponseMessage>(apiResponse, HttpStatus.BAD_REQUEST);
+
+    }
+
+    @ExceptionHandler(FileNotFoundException.class)
+    public ResponseEntity<ApiResponseMessage> handleFileNotFound(FileNotFoundException ex) {
+        log.info("File Not Found..!!");
+        String message = ex.getMessage();
+        ApiResponseMessage apiResponse = new ApiResponseMessage(HttpStatus.NOT_FOUND, false, message);
+        return new ResponseEntity<ApiResponseMessage>(apiResponse, HttpStatus.NOT_FOUND);
 
     }
 }

@@ -13,10 +13,10 @@ public interface CategoryService {
 
     //update Category
 
-    CategoryDto updateCategory(CategoryDto categoryDto,String categoryId);
+    CategoryDto updateCategory(CategoryDto categoryDto, String categoryId);
 
     //get All Category
-    PageableResponse<CategoryDto> getAllCategory(Integer pageNumber, Integer pageSize, String sortBy, String sortDir);
+    PageableResponse<CategoryDto> getAllCategory(int pageNumber, int pageSize, String sortBy, String sortDir);
 
     //delete Category
     void deleteCategory(String categoryId);
@@ -26,5 +26,5 @@ public interface CategoryService {
 
     //Search title
 
-    List<CategoryDto> getCategoryByTitle(String title);
+    List<CategoryDto> searchCategory(String title);
 }
