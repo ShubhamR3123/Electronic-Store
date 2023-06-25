@@ -155,7 +155,7 @@ public class ProductController {
      * @apiNote This Api is Used For uplod Product Image
      */
     @PostMapping("image/{productId}")
-    public ResponseEntity<ImageResponse> uplodProductImage(@RequestParam("prodImage") MultipartFile image, @PathVariable String productId) throws IOException {
+    public ResponseEntity<ImageResponse> uplodProductImage(@RequestPart("prodImage") MultipartFile image, @PathVariable String productId) throws IOException {
         log.info("Initiated request foruplod image details with image and productId:{}", image, productId);
         String uplodImage = fileService.uplodImage(image, imageUplodPath);
         ProductDto product = productService.getSingleProduct(productId);
