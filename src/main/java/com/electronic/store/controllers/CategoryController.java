@@ -145,7 +145,7 @@ public class CategoryController {
      * @apiNote This api is used for uplod coverImage
      */
     @PostMapping("/image/{categoryId}")
-    public ResponseEntity<ImageResponse> uplodCategoryImage(@RequestParam("catImage") MultipartFile image, @PathVariable String categoryId) throws IOException {
+    public ResponseEntity<ImageResponse> uplodCategoryImage(@RequestPart("catImage") MultipartFile image, @PathVariable String categoryId) throws IOException {
         log.info("Initiated request foruplod image details with image and userId:{}", image, categoryId);
         String imageName = fileService.uplodFile(image, imageUplodPath);
         CategoryDto category = categoryService.getCategoryById(categoryId);

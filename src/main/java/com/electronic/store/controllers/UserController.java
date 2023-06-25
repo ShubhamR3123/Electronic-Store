@@ -141,7 +141,7 @@ public class UserController {
     }
 
     @PostMapping("/image/{userId}")
-    public ResponseEntity<ImageResponse> uplodUserImage(@RequestParam("userImage") MultipartFile image, @PathVariable String userId) throws IOException {
+    public ResponseEntity<ImageResponse> uplodUserImage(@RequestPart("userImage") MultipartFile image, @PathVariable String userId) throws IOException {
         log.info("Initiated request foruplod image details with image and userId:{}", image, userId);
         String imageName = fileService.uplodImage(image, imageUplodPath);
         UserDto user = userService.getUserById(userId);
