@@ -78,12 +78,7 @@ public class CategoryController {
      * @apiNote THis Api is Used for Get All Category
      */
     @GetMapping("/category")
-    public ResponseEntity<PageableResponse<CategoryDto>> getAllCategory(
-            @RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber,
-            @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize,
-            @RequestParam(value = "sortBy", defaultValue = "name", required = false) String sortBy,
-            @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir
-    ) {
+    public ResponseEntity<PageableResponse<CategoryDto>> getAllCategory(@RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber, @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize, @RequestParam(value = "sortBy", defaultValue = "name", required = false) String sortBy, @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
         log.info("Initiated Request for getAll Category with pageNumber,pageSize:{}", pageNumber, pageSize);
         PageableResponse<CategoryDto> allCategory = this.categoryService.getAllCategory(pageNumber, pageSize, sortBy, sortDir);
         log.info("Completed Request for getAll Category with pageNumber,pageSize:{}", pageNumber, pageSize);

@@ -92,9 +92,7 @@ public class CategoryServiceImpl implements CategoryService {
      */
     @Override
     public PageableResponse<CategoryDto> getAllCategory(int pageNumber, int pageSize, String sortBy, String sortDir) {
-        Sort sort = (sortDir.equalsIgnoreCase("desc")) ?
-                (Sort.by(sortBy).descending()) :
-                (Sort.by(sortBy).ascending());
+        Sort sort = (sortDir.equalsIgnoreCase("desc")) ? (Sort.by(sortBy).descending()) : (Sort.by(sortBy).ascending());
         Pageable pageable = PageRequest.of(pageNumber, pageSize);
         log.info("Initiated Dao call for get All  Users with pageNumber,pageSize,sortBy,sortDir:{}", pageNumber, pageSize, sortBy, sortDir);
         Page<Category> all = this.categoryRepository.findAll(pageable);
