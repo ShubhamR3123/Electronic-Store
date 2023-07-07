@@ -1,5 +1,4 @@
 package com.electronic.store.controllers;
-
 import com.electronic.store.dtos.ApiResponseMessage;
 import com.electronic.store.dtos.ImageResponse;
 import com.electronic.store.dtos.PageableResponse;
@@ -44,7 +43,9 @@ public class ProductController {
      */
     @PostMapping("/")
     public ResponseEntity<ProductDto> createProduct(@RequestBody ProductDto productDto) {
+        log.info("Initiated Request for create Product");
         ProductDto product = this.productService.createProduct(productDto);
+        log.info("Completed Request for create Product");
         return new ResponseEntity<>(product, HttpStatus.CREATED);
     }
 
@@ -57,7 +58,9 @@ public class ProductController {
      */
     @PutMapping("/{productId}")
     public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductDto productDto, @PathVariable String productId) {
+        log.info("Initiated Request for update Product with productId And productDto:{}", productId, productDto);
         ProductDto updateProduct = this.productService.updateProduct(productDto, productId);
+        log.info("Completed Request for update Product with productId And productDto:{}", productId, productDto);
         return new ResponseEntity<>(updateProduct, HttpStatus.OK);
     }
 
@@ -69,8 +72,10 @@ public class ProductController {
      */
     @DeleteMapping("/{productId}")
     public ResponseEntity<ApiResponseMessage> deleteProduct(@PathVariable String productId) {
+        log.info("Initiated Request for Delete Product with productId :{}", productId);
         this.productService.deleteProduct(productId);
         ApiResponseMessage response = ApiResponseMessage.builder().message(AppConstants.PRODUCT_DELETED).success(true).status(HttpStatus.OK).build();
+        log.info("Completed Request for Delete Product with productId:{}", productId);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
@@ -82,7 +87,9 @@ public class ProductController {
      */
     @GetMapping("/{productId}")
     public ResponseEntity<ProductDto> getSingleProduct(@PathVariable String productId) {
+        log.info("Initiated Request for Single Product with productId :{}", productId);
         ProductDto singleProduct = this.productService.getSingleProduct(productId);
+        log.info("Initiated Request for Single Product with productId :{}", productId);
         return new ResponseEntity<>(singleProduct, HttpStatus.OK);
     }
 
@@ -96,12 +103,10 @@ public class ProductController {
      * @apiNote this Api is Used for get All Products
      */
     @GetMapping
-    public ResponseEntity<PageableResponse> getAllProduct(
-            @RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber,
-            @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize,
-            @RequestParam(value = "sortBy", defaultValue = "title", required = false) String sortBy,
-            @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
+    public ResponseEntity<PageableResponse> getAllProduct(@RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber, @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize, @RequestParam(value = "sortBy", defaultValue = "title", required = false) String sortBy, @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
+        log.info("Initiated Request for Get All Products with pageNumber,pageSize,sortBy,sortDir :{}", pageNumber, pageSize, sortBy, sortDir);
         PageableResponse<ProductDto> allProduct = this.productService.getAllProduct(pageNumber, pageSize, sortBy, sortDir);
+        log.info("Completed Request for Get All Products with pageNumber,pageSize,sortBy,sortDir :{}", pageNumber, pageSize, sortBy, sortDir);
         return new ResponseEntity<>(allProduct, HttpStatus.OK);
     }
 
@@ -115,12 +120,10 @@ public class ProductController {
      * @apiNote THis Api is Used For get All Live Products
      */
     @GetMapping("/live")
-    public ResponseEntity<PageableResponse> getAllLive(
-            @RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber,
-            @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize,
-            @RequestParam(value = "sortBy", defaultValue = "title", required = false) String sortBy,
-            @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
+    public ResponseEntity<PageableResponse> getAllLive(@RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber, @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize, @RequestParam(value = "sortBy", defaultValue = "title", required = false) String sortBy, @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
+        log.info("Initiated Request for Get AllLive Products with pageNumber,pageSize,sortBy,sortDir :{}", pageNumber, pageSize, sortBy, sortDir);
         PageableResponse<ProductDto> allProduct = this.productService.getAllLive(pageNumber, pageSize, sortBy, sortDir);
+        log.info("Completed Request for Get AllLive Products with pageNumber,pageSize,sortBy,sortDir :{}", pageNumber, pageSize, sortBy, sortDir);
         return new ResponseEntity<>(allProduct, HttpStatus.OK);
     }
 
@@ -135,13 +138,10 @@ public class ProductController {
      * @apiNote This Api is Used For Search Product
      */
     @GetMapping("/search/{query}")
-    public ResponseEntity<PageableResponse> serarchProduct(
-            @PathVariable String query,
-            @RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber,
-            @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize,
-            @RequestParam(value = "sortBy", defaultValue = "title", required = false) String sortBy,
-            @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
+    public ResponseEntity<PageableResponse> serarchProduct(@PathVariable String query, @RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber, @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize, @RequestParam(value = "sortBy", defaultValue = "title", required = false) String sortBy, @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
+        log.info("Initiated Request for Search Products with pageNumber,pageSize,sortBy,sortDir :{}", pageNumber, pageSize, sortBy, sortDir);
         PageableResponse<ProductDto> allProduct = this.productService.searchByTitle(query, pageNumber, pageSize, sortBy, sortDir);
+        log.info("Completed Request for Search  Products with pageNumber,pageSize,sortBy,sortDir :{}", pageNumber, pageSize, sortBy, sortDir);
         return new ResponseEntity<>(allProduct, HttpStatus.OK);
     }
 //uplod image
@@ -160,7 +160,6 @@ public class ProductController {
         String uplodImage = fileService.uplodImage(image, imageUplodPath);
         ProductDto product = productService.getSingleProduct(productId);
         product.setImageName(uplodImage);
-
         ProductDto productDto = productService.updateProduct(product, productId);
         ImageResponse response = ImageResponse.builder().imageName(uplodImage).success(true).message(AppConstants.PIMAGE_UPLOD).status(HttpStatus.OK).build();
         log.info("Completed request foruplod image details with image and productId:{}", image, productId);
