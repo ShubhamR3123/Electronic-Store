@@ -1,12 +1,10 @@
 package com.electronic.store.controllers;
 
-import com.electronic.store.dtos.ApiResponseMessage;
-import com.electronic.store.dtos.CategoryDto;
-import com.electronic.store.dtos.ImageResponse;
-import com.electronic.store.dtos.PageableResponse;
+import com.electronic.store.dtos.*;
 import com.electronic.store.helper.AppConstants;
 import com.electronic.store.services.CategoryService;
 import com.electronic.store.services.FileService;
+import com.electronic.store.services.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 import java.beans.Transient;
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,7 +35,8 @@ public class CategoryController {
 
     @Autowired
     private CategoryService categoryService;
-
+@Autowired
+    private ProductService productService;
 
     /**
      * @param categoryDto

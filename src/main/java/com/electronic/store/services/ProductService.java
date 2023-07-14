@@ -1,5 +1,6 @@
 package com.electronic.store.services;
 
+import com.electronic.store.dtos.CategoryDto;
 import com.electronic.store.dtos.PageableResponse;
 import com.electronic.store.dtos.ProductDto;
 
@@ -26,4 +27,10 @@ public interface ProductService {
 
     //
     PageableResponse<ProductDto> searchByTitle(String title, Integer pageNumber, Integer pageSize, String sortBy, String sortDir);
+
+//create product with category
+
+    ProductDto createWithCategory(ProductDto productDto,String categoryId);
+
+    ProductDto updateProductWithCategory(String productId ,String categoryId);
 }

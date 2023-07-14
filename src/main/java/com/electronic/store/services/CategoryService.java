@@ -2,6 +2,7 @@ package com.electronic.store.services;
 
 import com.electronic.store.dtos.CategoryDto;
 import com.electronic.store.dtos.PageableResponse;
+import com.electronic.store.dtos.ProductDto;
 
 import java.util.List;
 
@@ -27,4 +28,7 @@ public interface CategoryService {
     //Search title
 
     List<CategoryDto> searchCategory(String title);
+
+
+
 }

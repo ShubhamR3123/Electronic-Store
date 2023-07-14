@@ -1,15 +1,9 @@
 package com.electronic.store.entites;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import java.util.Date;
 
@@ -18,6 +12,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Table(name = "products")
 public class Product {
 
@@ -35,4 +30,8 @@ public class Product {
     private boolean stock;
 
     private String imageName;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "category")
+    private Category category;
 }

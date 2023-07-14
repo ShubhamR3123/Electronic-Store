@@ -2,10 +2,12 @@ package com.electronic.store.services.impl;
 
 import com.electronic.store.dtos.PageableResponse;
 import com.electronic.store.dtos.ProductDto;
+import com.electronic.store.entites.Category;
 import com.electronic.store.entites.Product;
 import com.electronic.store.exceptions.ResourceNotFoundException;
 import com.electronic.store.helper.AppConstants;
 import com.electronic.store.helper.Helper;
+import com.electronic.store.repositories.CategoryRepository;
 import com.electronic.store.repositories.ProductRepository;
 import com.electronic.store.services.ProductService;
 import lombok.extern.slf4j.Slf4j;
@@ -38,7 +40,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Autowired
     private ModelMapper modelMapper;
-
+    @Autowired
+private CategoryRepository categoryRepository;
     /**
      * @param productDto
      * @return
@@ -166,5 +169,39 @@ public class ProductServiceImpl implements ProductService {
         log.info("Completed Dao call for Serach  Product with title:{}", title);
         return Helper.getPageableResponse(page, ProductDto.class);
 
+    }
+
+    /**
+     * @param productDto
+     * @param categoryId
+     * @return
+     */
+    @Override
+    public ProductDto createWithCategory(ProductDto productDto, String categoryId) {
+        log.info("Request initiate of the dao call for save the product data with categoryId:{}",categoryId);
+        //fetch the category from DB:
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        Product products = this.modelMapper.map(productDto, Product.class);
+        String randomId = UUID.randomUUID().toString();
+        products.setProductId(randomId);
+        products.setAddedDate(new Date());
+        products.setCategory(category);
+        Product save = this.productRepository.save(products);
+        log.info("Request Completed of the dao call for save the product data with categoryId:{}",categoryId);
+        return this.modelMapper.map(save, ProductDto.class);
+    }
+
+    /**
+     * @param productId
+     * @param categoryId
+     * @return
+     */
+    @Override
+    public ProductDto updateProductWithCategory(String productId, String categoryId) {
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.PRODUCT_NOT_FOUND + productId));
+        product.setCategory(category);
+        Product save = this.productRepository.save(product);
+        return this.modelMapper.map(save,ProductDto.class);
     }
 }

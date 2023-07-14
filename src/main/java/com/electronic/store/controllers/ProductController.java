@@ -12,11 +12,13 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -35,6 +37,8 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @Autowired(required = false)
+    private ProductDto productDto;
     /**
      * @param productDto
      * @return
@@ -78,6 +82,7 @@ public class ProductController {
         log.info("Completed Request for Delete Product with productId:{}", productId);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+    
 
     /**
      * @param productId
@@ -103,6 +108,7 @@ public class ProductController {
      * @apiNote this Api is Used for get All Products
      */
     @GetMapping
+    @Scheduled(cron = "0/15 * * * * *")
     public ResponseEntity<PageableResponse> getAllProduct(@RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber, @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize, @RequestParam(value = "sortBy", defaultValue = "title", required = false) String sortBy, @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir) {
         log.info("Initiated Request for Get All Products with pageNumber,pageSize,sortBy,sortDir :{}", pageNumber, pageSize, sortBy, sortDir);
         PageableResponse<ProductDto> allProduct = this.productService.getAllProduct(pageNumber, pageSize, sortBy, sortDir);
@@ -183,4 +189,20 @@ public class ProductController {
         log.info("Completed request serve image details with  productId:{}", productId);
     }
 
+    @PostMapping("/category/{categoryId}/product")
+    public ResponseEntity<ProductDto> createProductWithCategoryId(@Valid @RequestBody ProductDto productDto, @PathVariable String categoryId) {
+        log.info("Request started for service layer to create product with categoryId :{}", categoryId);
+        ProductDto product = this.productService.createWithCategory(productDto, categoryId);
+        log.info("Request completed for service layer to create product with categoryId :{}", categoryId);
+        return new ResponseEntity<>(product, HttpStatus.CREATED);
+
+    }
+    @PutMapping("/category/{categoryId}/product/{productId}")
+    public ResponseEntity<ProductDto> updateProductWithCategoryId(@PathVariable String categoryId, @PathVariable String productId) {
+        log.info("Request started for service layer to update product with categoryId :{}", categoryId + " and with productId :{}" + productId);
+        ProductDto productDto = this.productService.updateProductWithCategory(categoryId, productId);
+        log.info("Request completed for service layer to update product with categoryId :{}", categoryId + " and with productId :{}" + productId);
+        return new ResponseEntity<>(productDto, HttpStatus.OK);
+
+    }
 }
