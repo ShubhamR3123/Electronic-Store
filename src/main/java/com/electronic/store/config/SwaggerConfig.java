@@ -2,6 +2,7 @@ package com.electronic.store.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -13,7 +14,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.Arrays;
 import java.util.Collections;
 
-@EnableSwagger2
 @Configuration
 public class SwaggerConfig {
 
@@ -36,6 +36,8 @@ return new ApiInfo(
                 new Contact("ShubhamIT", "www.shubhamit.com", "contactus@shubhamit .com"),
                 "License of API", "API license URL", Collections.emptyList());
     }
+
+
 //        return new ApiInfo("Electronic Store Application: Backend Course",
 //                "This code is developed by  Shubham","V1",null,new Contact("Shubham IT", "Shubhamdhokchaule3108@gmail.com", "https://Shubhamdhokchaule3108@gmail.com")
 //
