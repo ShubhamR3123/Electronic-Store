@@ -46,7 +46,7 @@ private CategoryRepository categoryRepository;
      * @param productDto
      * @return
      * @author Shubham Dhokchaule
-     * @apiNote
+     * @apiNote This Method is Used for Create Product
      */
     @Override
     public ProductDto createProduct(ProductDto productDto) {
@@ -62,6 +62,8 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+      * @author Shubham Dhokchaule
+      * @apiNote This Method is Used for Update  Product
      * @param productDto
      * @param productId
      * @return
@@ -84,6 +86,8 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+     * @author Shubham Dhokchaule
+     * @apiNote This Method is Used for Delete  Product
      * @param productId
      */
     @Override
@@ -107,12 +111,13 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+     * @author Shubham Dhokchaule
+     * @apiNote This Method is Used for Get All  Product
      * @param pageNumber
      * @param pageSize
      * @param sortBy
      * @param sortDir
      * @return
-     * @author Shubham Dhokchaule
      */
     @Override
     public PageableResponse<ProductDto> getAllProduct(Integer pageNumber, Integer pageSize, String sortBy, String sortDir) {
@@ -126,6 +131,8 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+     * @author Shubham Dhokchaule
+     * @apiNote This Method is Used for Get Single  Product
      * @param productId
      * @return
      */
@@ -138,6 +145,12 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+     * @author Shubham Dhokchaule
+     * @apiNote This Method is Used for Get All Live  Product
+     * @param pageNumber
+     * @param pageSize
+     * @param sortBy
+     * @param sortDir
      * @return
      */
     @Override
@@ -151,6 +164,8 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+     * @author Shubham Dhokchaule
+     * @apiNote This Method is Used for Search Product
      * @param title
      * @param pageNumber
      * @param pageSize
@@ -172,6 +187,8 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+     * @author Shubham Dhokchaule
+     * @apiNote This Method is Used for Create  Product With Category
      * @param productDto
      * @param categoryId
      * @return
@@ -192,6 +209,8 @@ private CategoryRepository categoryRepository;
     }
 
     /**
+     * @author Shubham Dhokchaule
+     * @apiNote This Method is Used for Update  Product With Category
      * @param productId
      * @param categoryId
      * @return

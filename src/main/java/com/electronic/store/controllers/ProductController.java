@@ -189,6 +189,14 @@ public class ProductController {
         log.info("Completed request serve image details with  productId:{}", productId);
     }
 
+    /**
+     * @author Shubham Dhokchaule
+     * @param productDto
+     * @param categoryId
+     * @return
+     * @apiNote This Api is Used For create Product With Category Id
+     */
+
     @PostMapping("/category/{categoryId}/product")
     public ResponseEntity<ProductDto> createProductWithCategoryId(@Valid @RequestBody ProductDto productDto, @PathVariable String categoryId) {
         log.info("Request started for service layer to create product with categoryId :{}", categoryId);
@@ -197,11 +205,19 @@ public class ProductController {
         return new ResponseEntity<>(product, HttpStatus.CREATED);
 
     }
+
+    /**
+    * @author Shubham Dhokchaule
+     * @param categoryId
+     * @param productId
+     * @apiNote This Api is Used For update Product With Category Id
+     * @return
+     */
     @PutMapping("/category/{categoryId}/product/{productId}")
     public ResponseEntity<ProductDto> updateProductWithCategoryId(@PathVariable String categoryId, @PathVariable String productId) {
-        log.info("Request started for service layer to update product with categoryId :{}", categoryId + " and with productId :{}" + productId);
+        log.info("Initiated request for update product with categoryId :{}", categoryId + " and with productId :{}" + productId);
         ProductDto productDto = this.productService.updateProductWithCategory(categoryId, productId);
-        log.info("Request completed for service layer to update product with categoryId :{}", categoryId + " and with productId :{}" + productId);
+        log.info(" completed Request for  update product with categoryId :{}", categoryId + " and with productId :{}" + productId);
         return new ResponseEntity<>(productDto, HttpStatus.OK);
 
     }
