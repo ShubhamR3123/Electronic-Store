@@ -6,7 +6,6 @@ public class AppConstants {
 
     public static final String USER_DELETED = "User Deleted SuccessFully";
 
-
     public static final String IMAGE_UPLOD = "Image Uploded Successfully";
 
     public static final String CATEGORY_NOT_FOUND = "Category Not Found With Given Id";
@@ -19,4 +18,7 @@ public class AppConstants {
 
     public static final String PIMAGE_UPLOD = "Product image Uploded Successfully";
 
+    public static final String P_NOT_FOUND = "Product Not Found IN Database..";
+
+    public static final String QUANTITY =" Requested quantity is not valid !!";
 }

@@ -1,9 +1,6 @@
 package com.electronic.store.entites;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -14,11 +11,14 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
+@Entity
 public class Cart {
     @Id
     private String cartId;
     private Date createdAt;
     @OneToOne
+    @JoinColumn(name ="user_Id")
     private User user;
     @OneToMany(mappedBy = "cart",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<CartItem> items=new ArrayList<>();
