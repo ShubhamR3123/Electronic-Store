@@ -21,4 +21,7 @@ public class AppConstants {
     public static final String P_NOT_FOUND = "Product Not Found IN Database..";
 
     public static final String QUANTITY =" Requested quantity is not valid !!";
+
+    public static final String CART_NOT_FOUND= "cart with given id not Found on server";
+    public static final String ORDER_NOT_FOUND= "Order not found ,,!!";
 }
