@@ -4,6 +4,7 @@ import com.electronic.store.dtos.PageableResponse;
 import com.electronic.store.dtos.ProductDto;
 import com.electronic.store.entites.Category;
 import com.electronic.store.entites.Product;
+import com.electronic.store.repositories.CategoryRepository;
 import com.electronic.store.repositories.ProductRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -27,6 +28,9 @@ class ProductServiceTest {
 
     @MockBean
     private ProductRepository productRepository;
+
+    @MockBean
+    private CategoryRepository categoryRepository;
     @Autowired
     private ModelMapper mapper;
     @Autowired
@@ -127,6 +131,20 @@ class ProductServiceTest {
         PageableResponse<ProductDto> response = productService.searchByTitle("keyword", 1, 2, "title", "asc");
         Assertions.assertEquals(3,response.getContent().size());
     }
+    @Test
+void createProductWithCategory(){
+        String categoryId="12abc";
+        Category category =Category.builder().title("category2").categoryId("101").description("Second category").coverImage("abc.png").build();
+Mockito.when(categoryRepository.findById(Mockito.anyString())).thenReturn(Optional.of(category));
+Mockito.when(productRepository.save(Mockito.any())).thenReturn(product);
 
+        ProductDto dto = this.mapper.map(product, ProductDto.class);
+        ProductDto productDto = productService.createWithCategory(dto, categoryId);
+        System.out.println(productDto.getTitle());
+
+        Assertions.assertEquals(product.getDiscounted_price(),productDto.getDiscounted_price(),"Test case failes");
+
+
+    }
 
     }
