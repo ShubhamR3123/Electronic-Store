@@ -4,7 +4,6 @@ import com.electronic.store.dtos.AddItemToCartRequest;
 import com.electronic.store.dtos.CartDto;
 import com.electronic.store.helper.ApiResponse;
 import com.electronic.store.services.CartService;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -71,7 +70,7 @@ public class CartController {
      * @author Shubham Dhokchaule
      * @apiNote THis Api is Used for cartByUser
      */
-    @GetMapping("/{userId}")
+    @PostMapping("/{userId}")
     public ResponseEntity<CartDto> cartByUser(@PathVariable String userId) {
         log.info("Initiated Request for get Cart By user with userId:{}", userId);
         CartDto cartDto = cartService.cartByUser(userId);
