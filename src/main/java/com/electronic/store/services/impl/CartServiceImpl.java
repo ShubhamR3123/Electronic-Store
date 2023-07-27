@@ -17,9 +17,7 @@ import com.electronic.store.services.CartService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Date;
 import java.util.List;
@@ -63,10 +61,10 @@ public class CartServiceImpl implements CartService {
             throw new BadApiRequest(AppConstants.QUANTITY);
         }
         //fetch product
-        Product product = productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.P_NOT_FOUND));
+        Product product = productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.P_NOT_FOUND));
 
         //fetch user from db
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND));
 
         Cart cart = null;
         try {
@@ -119,7 +117,7 @@ public class CartServiceImpl implements CartService {
     @Override
     public void removeItemFromCart(String userId, Integer cartItemId) {
         log.info("Initiated Dao Call For removeItemFromCart with userId and cartItemId:{}", userId, cartItemId);
-        CartItem cartItem = cartItemRepository.findById(cartItemId).orElseThrow(() -> new ResourceNotFoundException("CartItem not found with cartItemId" + cartItemId));
+        CartItem cartItem = cartItemRepository.findById(cartItemId).orElseThrow(() -> new ResourceNotFoundException("user", "CartItem not found with cartItemId" + cartItemId));
         cartItemRepository.delete(cartItem);
         log.info("Completed Dao Call For removeItemFromCart with userId and cartItemId:{}", userId, cartItemId);
 
@@ -133,8 +131,8 @@ public class CartServiceImpl implements CartService {
     @Override
     public void clearCart(String userId) {
         log.info("Initiated Dao Call For clearCart with userId:{}", userId);
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
-        Cart cart = cartRepository.findByUser(user).orElseThrow(() -> new ResourceNotFoundException("cart user not found"));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND + userId));
+        Cart cart = cartRepository.findByUser(user).orElseThrow(() -> new ResourceNotFoundException("user", "cart user not found"));
         cart.getItems().clear();
         cartRepository.save(cart);
         log.info("Completed Dao Call For clearCart with userId:{}", userId);
@@ -149,8 +147,8 @@ public class CartServiceImpl implements CartService {
     @Override
     public CartDto cartByUser(String userId) {
         log.info("Initiated Dao Call For cartByUser with userId:{}", userId);
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
-        Cart cart = cartRepository.findByUser(user).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + user));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND + userId));
+        Cart cart = cartRepository.findByUser(user).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND + user));
         log.info("Completed Dao Call For cartByUser:{}", userId);
         return modelMapper.map(cart, CartDto.class);
 

@@ -8,7 +8,7 @@ import lombok.Setter;
 public class ResourceNotFoundException extends RuntimeException {
 
 
-    public ResourceNotFoundException(String resourceName) {
+    public ResourceNotFoundException(String user, String resourceName) {
         super(resourceName);
 
     }

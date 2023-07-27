@@ -29,4 +29,5 @@ public interface UserService {
     //serach image by keyword
     List<UserDto> searchUser(String keyword);
 
+    UserDto registerNewUser(UserDto userDto);
 }

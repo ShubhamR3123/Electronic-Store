@@ -24,4 +24,8 @@ public class AppConstants {
 
     public static final String CART_NOT_FOUND= "cart with given id not Found on server";
     public static final String ORDER_NOT_FOUND= "Order not found ,,!!";
+
+
+
+    public static final String ACCESS= "Access Denied,,!!";
 }

@@ -25,9 +25,7 @@ import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Date;
-import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -71,7 +69,7 @@ private CategoryRepository categoryRepository;
     @Override
     public ProductDto updateProduct(ProductDto productDto, String productId) {
         log.info("Initiated Dao call for Update Product with productId:{}", productId);
-        Product updateProduct = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.PRODUCT_NOT_FOUND + productId));
+        Product updateProduct = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.PRODUCT_NOT_FOUND + productId));
         updateProduct.setTitle(productDto.getTitle());
         updateProduct.setDescription(productDto.getDescription());
         updateProduct.setQuantity(productDto.getQuantity());
@@ -93,7 +91,7 @@ private CategoryRepository categoryRepository;
     @Override
     public void deleteProduct(String productId) {
         log.info("Initiated Dao call for Delete Product with productId:{}", productId);
-        Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.PRODUCT_NOT_FOUND + productId));
+        Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.PRODUCT_NOT_FOUND + productId));
 
         String fullPath = imageUplodPath + product.getImageName();
         try {
@@ -139,7 +137,7 @@ private CategoryRepository categoryRepository;
     @Override
     public ProductDto getSingleProduct(String productId) {
         log.info("Initiated Dao call for Get Single Product with productId:{}", productId);
-        Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.PRODUCT_NOT_FOUND + productId));
+        Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.PRODUCT_NOT_FOUND + productId));
         log.info("Initiated Dao call for Get Single Product with productId:{}", productId);
         return modelMapper.map(product, ProductDto.class);
     }
@@ -197,7 +195,7 @@ private CategoryRepository categoryRepository;
     public ProductDto createWithCategory(ProductDto productDto, String categoryId) {
         log.info("Request initiate of the dao call for save the product data with categoryId:{}",categoryId);
         //fetch the category from DB:
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.CATEGORY_NOT_FOUND + categoryId));
         Product products = this.modelMapper.map(productDto, Product.class);
         String randomId = UUID.randomUUID().toString();
         products.setProductId(randomId);
@@ -217,8 +215,8 @@ private CategoryRepository categoryRepository;
      */
     @Override
     public ProductDto updateProductWithCategory(String productId, String categoryId) {
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
-        Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.PRODUCT_NOT_FOUND + productId));
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        Product product = this.productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.PRODUCT_NOT_FOUND + productId));
         product.setCategory(category);
         Product save = this.productRepository.save(product);
         return this.modelMapper.map(save,ProductDto.class);

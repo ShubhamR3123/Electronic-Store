@@ -70,7 +70,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto updateUser(UserDto userDto, String userId) {
         log.info("Initiated Dao call for update User with UserId:{}", userId);
-        User updateduser = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
+        User updateduser = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND + userId));
         UserDto updaedDto = entityToDto(updateduser);
         log.info("Completed Dao call for update User with UserId:{}", userId);
         return updaedDto;
@@ -101,7 +101,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(String userId) {
         log.info("Initiated Dao call for Delete User With userId:{}", userId);
-        User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
+        User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND + userId));
         String fullPath = imageUplodPath + user.getImageName();
         try {
             Path path = Paths.get(fullPath);
@@ -125,7 +125,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto getUserById(String userId) {
         log.info("Initiated Dao call for get  User With userId:{}", userId);
-        User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
+        User user = this.userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND + userId));
         log.info("Completed Dao call for get  User With userId:{}", userId);
         return entityToDto(user);
     }
@@ -139,7 +139,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto getUserByEmail(String email) {
         log.info("Initiated Dao call for get  User With email:{}", email);
-        User user = this.userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + email));
+        User user = this.userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND + email));
         log.info("Completed Dao call for get  User With email:{}", email);
         return entityToDto(user);
     }
@@ -156,6 +156,15 @@ public class UserServiceImpl implements UserService {
         List<UserDto> dtoList = users.stream().map(user -> entityToDto(user)).collect(Collectors.toList());
         log.info("Completed Dao call for get  User With keyword:{}", keyword);
         return dtoList;
+    }
+
+    /**
+     * @param userDto
+     * @return
+     */
+    @Override
+    public UserDto registerNewUser(UserDto userDto) {
+        return null;
     }
 
 

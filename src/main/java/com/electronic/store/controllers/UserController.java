@@ -9,6 +9,7 @@ import com.electronic.store.services.FileService;
 import com.electronic.store.services.UserService;
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -154,7 +155,7 @@ public class UserController {
     }
 
     @GetMapping("/image/{userId}")
-    public void serveUserImage(@PathVariable String userId, HttpServletResponse response) throws IOException {
+    public void serveUserImage(@PathVariable String userId, @NotNull HttpServletResponse response) throws IOException {
         log.info("Initiated request for serve image details with  userId:{}", userId);
         UserDto user = userService.getUserById(userId);
         log.info("user image name:{}", user.getImageName());

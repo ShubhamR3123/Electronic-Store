@@ -101,7 +101,7 @@ public class UserControllerTest {
         this.mockMvc.perform(MockMvcRequestBuilders.delete("/users/" + userId).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON)).andDo(print()).andExpect(status().isOk());
     }
     @Test
-    public void getUserByIdTest() throws Exception {
+     void getUserByIdTest() throws Exception {
 
         String userId = "1234";
 

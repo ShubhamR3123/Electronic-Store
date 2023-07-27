@@ -58,11 +58,11 @@ public class orderServiceImpl implements OrderService {
         String cartId = orderDto.getCartId();
 //fetch user
         log.info("Request to find user with userId:{}", userId);
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND));
 
         //fetch cart
         log.info("Request to find cart with cartId:{}", cartId);
-        Cart cart = cartRepository.findById(cartId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CART_NOT_FOUND));
+        Cart cart = cartRepository.findById(cartId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.CART_NOT_FOUND));
 
 
         List<CartItem> cartItems = cart.getItems();
@@ -105,7 +105,7 @@ public class orderServiceImpl implements OrderService {
     @Override
     public void removeOrder(String orderId) {
         log.info("Initiated Dao Call For Remove Order with orderId:{}", orderId);
-        Order order1 = orderRespository.findById(orderId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.ORDER_NOT_FOUND));
+        Order order1 = orderRespository.findById(orderId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.ORDER_NOT_FOUND));
         orderRespository.delete(order1);
         log.info("Completed Dao Call For Remove Order with orderId:{}", orderId);
     }
@@ -119,7 +119,7 @@ public class orderServiceImpl implements OrderService {
     @Override
     public List<OrderDto> getOrdersOfUser(String userId) {
         log.info("Initiated Dao Call For get Order of user with userId:{}", userId);
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.USER_NOT_FOUND));
         List<Order> orders = orderRespository.findByUser(user);
         List<OrderDto> orderDtos = orders.stream().map(order -> modelMapper.map(order, OrderDto.class)).collect(Collectors.toList());
         log.info("Completed Dao Call For get Order of user with userId:{}", userId);

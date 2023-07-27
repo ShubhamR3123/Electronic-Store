@@ -2,9 +2,7 @@ package com.electronic.store.services.impl;
 
 import com.electronic.store.dtos.CategoryDto;
 import com.electronic.store.dtos.PageableResponse;
-import com.electronic.store.dtos.UserDto;
 import com.electronic.store.entites.Category;
-import com.electronic.store.entites.User;
 import com.electronic.store.exceptions.ResourceNotFoundException;
 import com.electronic.store.helper.AppConstants;
 import com.electronic.store.helper.Helper;
@@ -28,7 +26,6 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Service
 @Slf4j
@@ -70,7 +67,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryDto updateCategory(CategoryDto categoryDto, String categoryId) {
         log.info("Initiated Dao Call For update  Category with categoryId:{}", categoryId);
-        Category category = this.categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        Category category = this.categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.CATEGORY_NOT_FOUND + categoryId));
         category.setTitle(categoryDto.getTitle());
         category.setDescription(categoryDto.getDescription());
         category.setCoverImage(categoryDto.getCoverImage());
@@ -112,7 +109,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public void deleteCategory(String categoryId) {
         log.info("Initiated Dao call for Delete Category With categoryId:{}", categoryId);
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.CATEGORY_NOT_FOUND + categoryId));
 
         String fullPath = imageUplodPath + category.getCoverImage();
         try {
@@ -137,7 +134,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryDto getCategoryById(String categoryId) {
         log.info("Initiated Dao call for get Single Category With categoryId:{}", categoryId);
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("user", AppConstants.CATEGORY_NOT_FOUND + categoryId));
         log.info("Completed Dao call for get Single Category With categoryId:{}", categoryId);
         return modelMapper.map(category, CategoryDto.class);
     }
