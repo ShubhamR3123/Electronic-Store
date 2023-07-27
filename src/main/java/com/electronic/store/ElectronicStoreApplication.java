@@ -21,6 +21,8 @@ public class ElectronicStoreApplication implements CommandLineRunner {
 
 
     }
+
+
   @Override
     public void run(String... args) throws Exception {
         System.out.println(this.passwordEncoder.encode("Shubham"));
